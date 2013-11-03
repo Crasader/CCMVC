@@ -1,5 +1,6 @@
 ﻿#include "ControllerDirector.h"
 #include "../Layer.h"
+#include "../Window.h"
 
 NS_CC_YHMVC_BEGIN
 
@@ -20,14 +21,22 @@ ControllerDirector::~ControllerDirector()
 
 bool ControllerDirector::init()
 {
-	if(!LayerController::init()){
-		return false;
-	}
 	m_constrollersStack=new CCArray();
 	m_constrollersStack->init();
 	return true;
 }
 
+/**
+ * 开始运行一个controller.各个程序运行生命周期最多只执行一次。
+ */
+void ControllerDirector::runController(LayerController* controller)
+{
+	pushController(controller);
+}
+
+/**
+ * 新的controller位于当前controller之上。
+ */
 void ControllerDirector::pushController(LayerController* controller)
 {
 	m_constrollersStack->addObject(controller);
@@ -35,6 +44,20 @@ void ControllerDirector::pushController(LayerController* controller)
 	setNextController();
 }
 
+/**
+ * 替换当前的controller用新的controller显示。
+ */
+void ControllerDirector::replaceController(LayerController *controller)
+{
+	int size=m_constrollersStack->count();
+	m_constrollersStack->replaceObjectAtIndex(size-1,controller);
+	m_nextController=controller;
+	setNextController();
+}
+
+/**
+ * 结束当前controller并用栈的下一个controller做为当前显示controller。
+ */
 void ControllerDirector::popController()
 {
 	int size=m_constrollersStack->count();
@@ -46,6 +69,9 @@ void ControllerDirector::popController()
 	}
 }
 
+/**
+ * 消除controller栈内元素，直到最后一个controller，并把其显示。
+ */
 void ControllerDirector::popToRootController()
 {
 	int size=m_constrollersStack->count();
@@ -58,24 +84,13 @@ void ControllerDirector::popToRootController()
 	setNextController();
 }
 
-void ControllerDirector::replaceController(LayerController *controller)
-{
-	int size=m_constrollersStack->count();
-	m_constrollersStack->replaceObjectAtIndex(size-1,controller);
-	m_nextController=controller;
-	setNextController();
-}
-
 void ControllerDirector::setNextController()
 {
 	if(m_currentController) m_currentController->layerWillDisappear();
 	m_nextController->layerWillAppear();
 
-	//can't use m_pLayer，becase m_pLayer may be non't create
-	Layer* selfLayer=getLayer();
-	
-	if(m_currentController) selfLayer->removeChild(m_currentController->getLayer());
-	selfLayer->addChild(m_nextController->getLayer());
+	//set new root controller
+	Window::getCurrentWindow()->setRootLayerController(m_nextController);
 
 	if(m_currentController) m_currentController->layerDidDisappear();
 	m_nextController->layerDidAppear();
