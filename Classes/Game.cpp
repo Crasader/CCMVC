@@ -36,7 +36,7 @@ void Game::setupSceneDirector()
     CCLOG("scene register data size=%d",registerDataSize);
     
     for (int i=0; i<registerDataSize; ++i) {
-        sceneDirector->registerSceneCreate(kSceneRegisterData[i].name,kSceneRegisterData[i].createFun);
+        sceneDirector->registerControllerCreate(kSceneRegisterData[i].name,kSceneRegisterData[i].createFun);
     }
 }
 

@@ -20,6 +20,8 @@ public:
     void menuRunCallback(cocos2d::CCObject* pSender);
     void menuStopCallback(cocos2d::CCObject* pSender);
     void menuMoveToCallback(cocos2d::CCObject* pSender);
+    
+    CREATE_FUNC(MainController);
 };
 
 NS_MYGAME_END

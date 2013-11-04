@@ -42,7 +42,7 @@ void InitializeController::loadLayer()
 
 void InitializeController::startGameCallback(CCObject* pSender)
 {
-    cocos2d::mygame::GameSceneDirector::getInstance()->replaceScene(kMainScene);
+    GameSceneDirector::getInstance()->runWithScene(kMainScene);
 }
 
 NS_MYGAME_END

@@ -17,6 +17,8 @@ public:
 	void loadLayer();
 
 	void startGameCallback(cocos2d::CCObject* pSender);
+    
+    CREATE_FUNC(InitializeController);
 };
 NS_MYGAME_END
 

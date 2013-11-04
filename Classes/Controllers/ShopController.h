@@ -17,6 +17,8 @@ public:
 	void loadLayer();
 
 	void backCallback(cocos2d::CCObject* pSender);
+    
+    CREATE_FUNC(ShopController);
 };
 NS_MYGAME_END
 
