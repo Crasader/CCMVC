@@ -20,12 +20,6 @@ class GameSceneDirector:public yhmvc::ControllerDirector
 public:
     
     static GameSceneDirector* getInstance();
-    
-    void gotoInitScene();
-    
-    void gotoMainScene();
-    
-    void gotoShopScene();
 };
 
 NS_MYGAME_END

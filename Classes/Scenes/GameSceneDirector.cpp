@@ -25,27 +25,4 @@ GameSceneDirector* GameSceneDirector::getInstance()
     return s_gameSceneDirectorInstance;
 }
 
-void GameSceneDirector::gotoInitScene()
-{
-    InitializeController* controller=new InitializeController();
-    controller->init();
-    
-    runWithController(controller);
-}
-
-void GameSceneDirector::gotoMainScene()
-{
-    MainController* controller=new MainController();
-    controller->init();
-    
-    replaceController(controller);
-}
-
-void GameSceneDirector::gotoShopScene()
-{
-    ShopController* controller=new ShopController();
-    controller->init();
-    pushController(controller);
-}
-
 NS_MYGAME_END
