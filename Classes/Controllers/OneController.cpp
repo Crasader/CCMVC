@@ -1,7 +1,6 @@
 #include "OneController.h"
 #include "mvc/Layer.h"
 #include "Scenes/GameSceneDirector.h"
-#include "ThreeSegmentController.h"
 #include "HeaderController.h"
 #include "FooterController.h"
 
@@ -23,33 +22,43 @@ OneController::~OneController(void)
 
 void OneController::layerDidLoad()
 {
-    ThreeSegmentController* threeSegmentController=new ThreeSegmentController();
-    threeSegmentController->init();
-    this->addChildLayerController(threeSegmentController);
-    threeSegmentController->release();
+    CCSize screenSize=CCDirector::sharedDirector()->getWinSize();
     
-    m_layer->addChild(threeSegmentController->getLayer());
+    float headerHeight=60.0f,footerHeight=64.0f;
     
+    float bodyHeight=screenSize.height-headerHeight-footerHeight;
     
+    //create header
     HeaderController* headerController=new HeaderController();
     headerController->init();
     this->addChildLayerController(headerController);
     headerController->release();
-    headerController->setPreferredContentSize(threeSegmentController->getHeaderLayer()->getContentSize());
-    threeSegmentController->getHeaderLayer()->addChild(headerController->getLayer());
+    headerController->setPreferredContentSize(CCSizeMake(screenSize.width, headerHeight));
+    m_layer->addChild(headerController->getLayer());
+    headerController->getLayer()->setPosition(ccp(0.0f, screenSize.height-headerHeight));
     
+    
+    //create footer
     FooterController* footerController=new FooterController();
     footerController->init();
     this->addChildLayerController(footerController);
     footerController->release();
-    footerController->setPreferredContentSize(threeSegmentController->getFooterLayer()->getContentSize());
-    threeSegmentController->getFooterLayer()->addChild(footerController->getLayer());
+    footerController->setPreferredContentSize(CCSizeMake(screenSize.width,footerHeight));
+    m_layer->addChild(footerController->getLayer());
+    
+    //create body
+    yhmvc::Layer* bodyLayer=yhmvc::Layer::create();
+    bodyLayer->setContentSize(CCSizeMake(screenSize.width, bodyHeight));
+    bodyLayer->setPosition(ccp(0.0f, footerHeight));
+    m_layer->addChild(bodyLayer);
     
     
-    CCSize contentSize=threeSegmentController->getBodyLayer()->getContentSize();
+    CCSize contentSize=CCSizeMake(screenSize.width, bodyHeight);
+    
+    
     CCLabelTTF* label= CCLabelTTF::create("one scene", "Arial", 20);
     label->setPosition(ccp(contentSize.width/2,contentSize.height/2));
-    threeSegmentController->getBodyLayer()->addChild(label);
+    bodyLayer->addChild(label);
     
     
     CCMenuItemLabel *startGameItem=CCMenuItemLabel::create(CCLabelTTF::create("back", "Arial", 20),
@@ -66,7 +75,7 @@ void OneController::layerDidLoad()
     CCMenu* menu=CCMenu::create(startGameItem,next, NULL);
     menu->setPosition( CCPointZero );
     
-    threeSegmentController->getBodyLayer()->addChild(menu);
+    bodyLayer->addChild(menu);
 
 }
 

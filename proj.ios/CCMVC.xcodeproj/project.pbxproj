@@ -766,12 +766,6 @@
 		5797A5B1180E8DBD00BA5455 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				5748200418505B1200234D94 /* ThreeController.cpp */,
-				5748200518505B1200234D94 /* ThreeController.h */,
-				5748200118505AFB00234D94 /* TwoController.cpp */,
-				5748200218505AFB00234D94 /* TwoController.h */,
-				57481FFD1850594900234D94 /* ThreeSegmentController2.cpp */,
-				57481FFE1850594900234D94 /* ThreeSegmentController2.h */,
 				573FEB191848726100E7C69E /* FooterController.cpp */,
 				573FEB1A1848726100E7C69E /* FooterController.h */,
 				573FEB1B1848726100E7C69E /* HeaderController.cpp */,
@@ -784,8 +778,14 @@
 				573FEB38184DA8E700E7C69E /* OneController.h */,
 				57EA398D1823A10B001A0E96 /* ShopController.cpp */,
 				57EA398E1823A10B001A0E96 /* ShopController.h */,
+				5748200418505B1200234D94 /* ThreeController.cpp */,
+				5748200518505B1200234D94 /* ThreeController.h */,
 				573FEB29184C23ED00E7C69E /* ThreeSegmentController.cpp */,
 				573FEB2A184C23ED00E7C69E /* ThreeSegmentController.h */,
+				57481FFD1850594900234D94 /* ThreeSegmentController2.cpp */,
+				57481FFE1850594900234D94 /* ThreeSegmentController2.h */,
+				5748200118505AFB00234D94 /* TwoController.cpp */,
+				5748200218505AFB00234D94 /* TwoController.h */,
 			);
 			name = Controllers;
 			path = ../Classes/Controllers;
