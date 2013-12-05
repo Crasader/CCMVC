@@ -20,6 +20,7 @@ typedef struct SceneRegisterItem
 
 //TODO use generate tool to create this file
 #include "SceneDefine.h"
+
 #include "Controllers/InitializeController.h"
 #include "Controllers/MainController.h"
 #include "Controllers/ShopController.h"
