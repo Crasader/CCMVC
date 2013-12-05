@@ -26,6 +26,8 @@ public:
 	void backCallback(cocos2d::CCObject* pSender);
     
     void nextCallback(cocos2d::CCObject* pSender);
+    
+    CREATE_FUNC(OneController);
 };
 NS_MYGAME_END
 

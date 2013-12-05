@@ -20,7 +20,7 @@ TwoController::~TwoController(void)
 
 void TwoController::layerDidLoad()
 {
-    CCSize contentSize=getPreferredContentSize();
+    CCSize contentSize=CCDirector::sharedDirector()->getWinSize(); //getPreferredContentSize();
     
     CCLabelTTF* label= CCLabelTTF::create("two scene", "Arial", 20);
     label->setPosition(ccp(contentSize.width/2,contentSize.height/2));
