@@ -9,7 +9,7 @@
 #ifndef __CCMVC__HelloLayer__
 #define __CCMVC__HelloLayer__
 
-#include "mvc/Layer.h"
+#include "yhmvc/Core/Layer.h"
 #include "GameMacros.h"
 
 NS_MYGAME_BEGIN

@@ -1,8 +1,8 @@
 #ifndef __HELLOWORLD_TwoController_H__
 #define __HELLOWORLD_TwoController_H__
 
-#include "mvc/LayerController.h"
-#include "mvc/Layer.h"
+#include "yhmvc/Core/LayerController.h"
+#include "yhmvc/Core/Layer.h"
 #include "GameMacros.h"
 
 NS_MYGAME_BEGIN

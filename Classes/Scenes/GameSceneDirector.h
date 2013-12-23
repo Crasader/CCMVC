@@ -9,7 +9,7 @@
 #ifndef __CCMVC__GameSceneDirector__
 #define __CCMVC__GameSceneDirector__
 
-#include "mvc/SceneDirector.h"
+#include "yhmvc/Core/SceneDirector.h"
 #include "GameMacros.h"
 #include "SceneDefine.h"
 

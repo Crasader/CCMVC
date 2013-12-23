@@ -10,7 +10,7 @@
 #define __CCUI__BaseScene__
 
 #include "cocos2d.h"
-#include "mvc/Scene.h"
+#include "yhmvc/Core/Scene.h"
 #include "GameMacros.h"
 
 NS_MYGAME_BEGIN
