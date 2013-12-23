@@ -1,7 +1,7 @@
 #include "AppDelegate.h"
 
 #include "cocos2d.h"
-#include "mvc/Window.h"
+#include "yhmvc/Core/Window.h"
 #include "Game.h"
 #include "Scenes/GameSceneDirector.h"
 

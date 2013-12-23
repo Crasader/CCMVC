@@ -9,7 +9,7 @@
 #ifndef CCMVC_SceneRegisterData_h
 #define CCMVC_SceneRegisterData_h
 
-#include "mvc/Controllers/ControllerDirector.h"
+#include "yhmvc/Controllers/ControllerDirector.h"
 #include "GameMacros.h"
 
 typedef struct SceneRegisterItem
