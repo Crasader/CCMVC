@@ -1,0 +1,3 @@
+[submodule "yhmvc"]
+	path = yhmvc
+	url = git@github.com:trarck/yhmvc.git
