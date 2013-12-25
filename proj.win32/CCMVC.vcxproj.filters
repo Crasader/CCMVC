@@ -7,12 +7,6 @@
     <Filter Include="Classes">
       <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
     </Filter>
-    <Filter Include="mvc">
-      <UniqueIdentifier>{561c86c0-2890-4273-969d-896483a036ce}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="mvc\Controllers">
-      <UniqueIdentifier>{d3d2d833-766e-4a8f-b237-860e987b2915}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Classes\Controllers">
       <UniqueIdentifier>{622d699f-3285-402a-be2b-87a3a1532dff}</UniqueIdentifier>
     </Filter>
@@ -22,6 +16,18 @@
     <Filter Include="Classes\Scenes">
       <UniqueIdentifier>{71a32c1c-91fa-440b-a39b-df262a1bc492}</UniqueIdentifier>
     </Filter>
+    <Filter Include="yhmvc">
+      <UniqueIdentifier>{561c86c0-2890-4273-969d-896483a036ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="yhmvc\Controllers">
+      <UniqueIdentifier>{d3d2d833-766e-4a8f-b237-860e987b2915}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="yhmvc\Builders">
+      <UniqueIdentifier>{b4250236-9b1d-4c4b-ad04-4f2cd1d7c75b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="yhmvc\Core">
+      <UniqueIdentifier>{3929bc9f-fa0c-4085-8b63-4aa42efa1e34}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -30,26 +36,47 @@
     <ClCompile Include="..\Classes\AppDelegate.cpp">
       <Filter>Classes</Filter>
     </ClCompile>
-    <ClCompile Include="..\mvc\Layer.cpp">
-      <Filter>mvc</Filter>
+    <ClCompile Include="..\Classes\Layers\HelloLayer.cpp">
+      <Filter>Classes\Layers</Filter>
     </ClCompile>
-    <ClCompile Include="..\mvc\LayerController.cpp">
-      <Filter>mvc</Filter>
+    <ClCompile Include="..\Classes\Game.cpp">
+      <Filter>Classes</Filter>
     </ClCompile>
-    <ClCompile Include="..\mvc\Scene.cpp">
-      <Filter>mvc</Filter>
+    <ClCompile Include="..\yhmvc\yhmvc\Controllers\ControllerDirector.cpp">
+      <Filter>yhmvc\Controllers</Filter>
     </ClCompile>
-    <ClCompile Include="..\mvc\SceneDirector.cpp">
-      <Filter>mvc</Filter>
+    <ClCompile Include="..\yhmvc\yhmvc\Controllers\NavigateController.cpp">
+      <Filter>yhmvc\Controllers</Filter>
     </ClCompile>
-    <ClCompile Include="..\mvc\Window.cpp">
-      <Filter>mvc</Filter>
+    <ClCompile Include="..\yhmvc\yhmvc\Builders\Builder.cpp">
+      <Filter>yhmvc\Builders</Filter>
     </ClCompile>
-    <ClCompile Include="..\mvc\Controllers\NavigateController.cpp">
-      <Filter>mvc\Controllers</Filter>
+    <ClCompile Include="..\yhmvc\yhmvc\Builders\CCBBuilder.cpp">
+      <Filter>yhmvc\Builders</Filter>
     </ClCompile>
-    <ClCompile Include="..\mvc\Controllers\ControllerDirector.cpp">
-      <Filter>mvc\Controllers</Filter>
+    <ClCompile Include="..\yhmvc\yhmvc\Builders\YHBuilder.cpp">
+      <Filter>yhmvc\Builders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\yhmvc\yhmvc\Core\Layer.cpp">
+      <Filter>yhmvc\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\yhmvc\yhmvc\Core\LayerController.cpp">
+      <Filter>yhmvc\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\yhmvc\yhmvc\Core\Scene.cpp">
+      <Filter>yhmvc\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\yhmvc\yhmvc\Core\SceneDirector.cpp">
+      <Filter>yhmvc\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\yhmvc\yhmvc\Core\Window.cpp">
+      <Filter>yhmvc\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Controllers\FooterController.cpp">
+      <Filter>Classes\Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Controllers\HeaderController.cpp">
+      <Filter>Classes\Controllers</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\Controllers\InitializeController.cpp">
       <Filter>Classes\Controllers</Filter>
@@ -57,29 +84,26 @@
     <ClCompile Include="..\Classes\Controllers\MainController.cpp">
       <Filter>Classes\Controllers</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\Controllers\OneController.cpp">
+      <Filter>Classes\Controllers</Filter>
+    </ClCompile>
     <ClCompile Include="..\Classes\Controllers\ShopController.cpp">
       <Filter>Classes\Controllers</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\Layers\HelloLayer.cpp">
-      <Filter>Classes\Layers</Filter>
+    <ClCompile Include="..\Classes\Controllers\ThreeController.cpp">
+      <Filter>Classes\Controllers</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\Scenes\BaseScene.cpp">
-      <Filter>Classes\Scenes</Filter>
+    <ClCompile Include="..\Classes\Controllers\ThreeSegmentController.cpp">
+      <Filter>Classes\Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Controllers\ThreeSegmentController2.cpp">
+      <Filter>Classes\Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Controllers\TwoController.cpp">
+      <Filter>Classes\Controllers</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\Scenes\GameSceneDirector.cpp">
       <Filter>Classes\Scenes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\Scenes\InitializeScene.cpp">
-      <Filter>Classes\Scenes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\Scenes\MainScene.cpp">
-      <Filter>Classes\Scenes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\Scenes\ShopScene.cpp">
-      <Filter>Classes\Scenes</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\Game.cpp">
-      <Filter>Classes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -89,29 +113,56 @@
     <ClInclude Include="..\Classes\AppDelegate.h">
       <Filter>Classes</Filter>
     </ClInclude>
-    <ClInclude Include="..\mvc\Layer.h">
-      <Filter>mvc</Filter>
+    <ClInclude Include="..\Classes\Layers\HelloLayer.h">
+      <Filter>Classes\Layers</Filter>
     </ClInclude>
-    <ClInclude Include="..\mvc\LayerController.h">
-      <Filter>mvc</Filter>
+    <ClInclude Include="..\Classes\Game.h">
+      <Filter>Classes</Filter>
     </ClInclude>
-    <ClInclude Include="..\mvc\Scene.h">
-      <Filter>mvc</Filter>
+    <ClInclude Include="..\Classes\GameMacros.h">
+      <Filter>Classes</Filter>
     </ClInclude>
-    <ClInclude Include="..\mvc\SceneDirector.h">
-      <Filter>mvc</Filter>
+    <ClInclude Include="..\yhmvc\yhmvc\Controllers\ControllerDirector.h">
+      <Filter>yhmvc\Controllers</Filter>
     </ClInclude>
-    <ClInclude Include="..\mvc\Window.h">
-      <Filter>mvc</Filter>
+    <ClInclude Include="..\yhmvc\yhmvc\Controllers\NavigateController.h">
+      <Filter>yhmvc\Controllers</Filter>
     </ClInclude>
-    <ClInclude Include="..\mvc\YHMVCMacros.h">
-      <Filter>mvc</Filter>
+    <ClInclude Include="..\yhmvc\yhmvc\Builders\Builder.h">
+      <Filter>yhmvc\Builders</Filter>
     </ClInclude>
-    <ClInclude Include="..\mvc\Controllers\NavigateController.h">
-      <Filter>mvc\Controllers</Filter>
+    <ClInclude Include="..\yhmvc\yhmvc\Builders\CCBBuilder.h">
+      <Filter>yhmvc\Builders</Filter>
     </ClInclude>
-    <ClInclude Include="..\mvc\Controllers\ControllerDirector.h">
-      <Filter>mvc\Controllers</Filter>
+    <ClInclude Include="..\yhmvc\yhmvc\Builders\YHBuilder.h">
+      <Filter>yhmvc\Builders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\yhmvc\yhmvc\Core\Layer.h">
+      <Filter>yhmvc\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\yhmvc\yhmvc\Core\LayerController.h">
+      <Filter>yhmvc\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\yhmvc\yhmvc\Core\Scene.h">
+      <Filter>yhmvc\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\yhmvc\yhmvc\Core\SceneDirector.h">
+      <Filter>yhmvc\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\yhmvc\yhmvc\Core\Window.h">
+      <Filter>yhmvc\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\yhmvc\yhmvc\yhmvc.h">
+      <Filter>yhmvc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\yhmvc\yhmvc\YHMVCMacros.h">
+      <Filter>yhmvc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Controllers\FooterController.h">
+      <Filter>Classes\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Controllers\HeaderController.h">
+      <Filter>Classes\Controllers</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Controllers\InitializeController.h">
       <Filter>Classes\Controllers</Filter>
@@ -119,22 +170,25 @@
     <ClInclude Include="..\Classes\Controllers\MainController.h">
       <Filter>Classes\Controllers</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\Controllers\OneController.h">
+      <Filter>Classes\Controllers</Filter>
+    </ClInclude>
     <ClInclude Include="..\Classes\Controllers\ShopController.h">
       <Filter>Classes\Controllers</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\Layers\HelloLayer.h">
-      <Filter>Classes\Layers</Filter>
+    <ClInclude Include="..\Classes\Controllers\ThreeController.h">
+      <Filter>Classes\Controllers</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\Scenes\BaseScene.h">
-      <Filter>Classes\Scenes</Filter>
+    <ClInclude Include="..\Classes\Controllers\ThreeSegmentController.h">
+      <Filter>Classes\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Controllers\ThreeSegmentController2.h">
+      <Filter>Classes\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Controllers\TwoController.h">
+      <Filter>Classes\Controllers</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Scenes\GameSceneDirector.h">
-      <Filter>Classes\Scenes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Scenes\InitializeScene.h">
-      <Filter>Classes\Scenes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Scenes\MainScene.h">
       <Filter>Classes\Scenes</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Scenes\SceneDefine.h">
@@ -142,15 +196,6 @@
     </ClInclude>
     <ClInclude Include="..\Classes\Scenes\SceneRegisterData.h">
       <Filter>Classes\Scenes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Scenes\ShopScene.h">
-      <Filter>Classes\Scenes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Game.h">
-      <Filter>Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\GameMacros.h">
-      <Filter>Classes</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
