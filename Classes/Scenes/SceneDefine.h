@@ -1,23 +1,18 @@
-//
-//  SceneDifine.h
-//  CCMVC
-//
-//  Created by duanhouhai on 13-11-1.
-//
-//
+#ifndef CCMVC_SCENES_SCENEDIFINE_H_
+#define CCMVC_SCENES_SCENEDIFINE_H_
 
-#ifndef CCMVC_SceneDifine_h
-#define CCMVC_SceneDifine_h
+//this file generate by tool.do not modify derectely
 
-//TODO use generate tool to create this file
+static const char* kInitializeScene="InitializeScene";
+static const char* kMainScene="MainScene";
+static const char* kShopScene="ShopScene";
+static const char* kOneScene="OneScene";
+static const char* kTwoScene="TwoScene";
+static const char* kThreeScene="ThreeScene";
+static const char* kBuildScene="BuildScene";
+static const char* kTestAScene="TestAScene";
 
-static const char* kInitializeScene="initialize";
-static const char* kMainScene="main";
-static const char* kShopScene="shop";
-static const char* kOneScene="one";
-static const char* kTwoScene="two";
-static const char* kThreeScene="three";
 
-#pragma unused(kInitializeScene,kMainScene,kShopScene)
+#pragma unused(kInitializeScene,kMainScene,kShopScene,kOneScene,kTwoScene,kThreeScene,kBuildScene)
 
-#endif
+#endif //CCMVC_SCENES_SCENEDIFINE_H_

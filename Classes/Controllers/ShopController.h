@@ -1,12 +1,11 @@
 #ifndef __HELLOWORLD_ShopController_H__
 #define __HELLOWORLD_ShopController_H__
 
-#include "yhmvc/Core/LayerController.h"
-#include "yhmvc/Core/Layer.h"
+#include <yhmvc/yhmvc.h>
 #include "GameMacros.h"
 
 NS_MYGAME_BEGIN
-class ShopController:public cocos2d::yhmvc::LayerController
+class ShopController:public cocos2d::yhmvc::Controller
 {
 public:
 	
@@ -14,7 +13,7 @@ public:
     
 	~ShopController(void);
 
-	void layerDidLoad();
+	void viewDidLoad();
 
 	void backCallback(cocos2d::CCObject* pSender);
 };

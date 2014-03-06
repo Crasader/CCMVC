@@ -1,5 +1,4 @@
 #include "FooterController.h"
-#include "yhmvc/Core/Layer.h"
 #include "Scenes/GameSceneDirector.h"
 
 USING_NS_CC;
@@ -18,7 +17,7 @@ FooterController::~FooterController(void)
     
 }
 
-void FooterController::layerDidLoad()
+void FooterController::viewDidLoad()
 {
     
     CCSize screenSize=CCDirector::sharedDirector()->getWinSize();
@@ -43,7 +42,7 @@ void FooterController::layerDidLoad()
     
     menu->setPosition( CCPointZero );
     
-    m_layer->addChild(menu);
+    m_view->addChild(menu);
 }
 
 void FooterController::homeCallback(CCObject* pSender)

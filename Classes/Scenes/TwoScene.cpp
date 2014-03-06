@@ -11,14 +11,14 @@ void TwoScene::loadContents()
 {
     ThreeSegmentScene2::loadContents();
     
-    ThreeSegmentController2* threeSegmentController=static_cast<ThreeSegmentController2*>(getLayerControllerByName("ThreeSegmentController"));
+    ThreeSegmentController2* threeSegmentController=static_cast<ThreeSegmentController2*>(getControllerByName("ThreeSegmentController"));
     
 	TwoController* twoController=new TwoController();
 	twoController->init();
     twoController->setPreferredContentSize(threeSegmentController->getBodyLayer()->getContentSize());
     
-	threeSegmentController->getBodyLayer()->addChild(twoController->getLayer());
-    addLayerController(twoController);
+	threeSegmentController->getBodyLayer()->addChild(twoController->getView());
+    addController(twoController);
     twoController->release();
     
 }

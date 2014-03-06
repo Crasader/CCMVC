@@ -1,5 +1,4 @@
 #include "ThreeSegmentController2.h"
-#include "yhmvc/Core/Layer.h"
 #include "Scenes/GameSceneDirector.h"
 #include "HeaderController.h"
 #include "FooterController.h"
@@ -23,7 +22,7 @@ ThreeSegmentController2::~ThreeSegmentController2(void)
     
 }
 
-void ThreeSegmentController2::layerDidLoad()
+void ThreeSegmentController2::viewDidLoad()
 {
     CCSize screenSize=CCDirector::sharedDirector()->getWinSize();
     
@@ -36,31 +35,31 @@ void ThreeSegmentController2::layerDidLoad()
     //create header
     HeaderController* headerController=new HeaderController();
     headerController->init();
-    this->addChildLayerController(headerController);
+    this->addChildController(headerController);
     headerController->release();
     headerController->setPreferredContentSize(CCSizeMake(screenSize.width, headerHeight));
     
-    m_headerLayer=headerController->getLayer();
+    m_headerLayer=headerController->getView();
     m_headerLayer->setContentSize(CCSizeMake(screenSize.width, headerHeight));
     m_headerLayer->setPosition(ccp(0.0f, screenSize.height-headerHeight));
-    m_layer->addChild(m_headerLayer);
+    m_view->addChild(m_headerLayer);
     
     //create footer
     FooterController* footerController=new FooterController();
     footerController->init();
-    this->addChildLayerController(footerController);
+    this->addChildController(footerController);
     footerController->release();
     footerController->setPreferredContentSize(CCSizeMake(screenSize.width,footerHeight));
     
-    m_footerLayer=footerController->getLayer();
+    m_footerLayer=footerController->getView();
     m_footerLayer->setContentSize(CCSizeMake(screenSize.width,footerHeight));
-    m_layer->addChild(m_footerLayer);
+    m_view->addChild(m_footerLayer);
     
     //create body layer
-    m_bodyLayer=yhmvc::Layer::create();
+    m_bodyLayer=yhmvc::View::create();
     m_bodyLayer->setContentSize(CCSizeMake(screenSize.width, bodyHeight));
     m_bodyLayer->setPosition(ccp(0.0f, footerHeight));
-    m_layer->addChild(m_bodyLayer);
+    m_view->addChild(m_bodyLayer);
 
 }
 

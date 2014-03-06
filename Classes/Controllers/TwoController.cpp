@@ -1,5 +1,4 @@
 #include "TwoController.h"
-#include "yhmvc/Core/Layer.h"
 #include "Scenes/GameSceneDirector.h"
 
 USING_NS_CC;
@@ -18,13 +17,13 @@ TwoController::~TwoController(void)
     CCLOG("TwoController destroy");
 }
 
-void TwoController::layerDidLoad()
+void TwoController::viewDidLoad()
 {
     CCSize contentSize=getPreferredContentSize();
     
     CCLabelTTF* label= CCLabelTTF::create("two scene", "Arial", 20);
     label->setPosition(ccp(contentSize.width/2,contentSize.height/2));
-    m_layer->addChild(label);
+    m_view->addChild(label);
     
     
     CCMenuItemLabel *startGameItem=CCMenuItemLabel::create(CCLabelTTF::create("back", "Arial", 20),
@@ -41,7 +40,7 @@ void TwoController::layerDidLoad()
     CCMenu* menu=CCMenu::create(startGameItem,next,NULL);
     menu->setPosition( CCPointZero );
     
-    m_layer->addChild(menu);
+    m_view->addChild(menu);
 
 }
 

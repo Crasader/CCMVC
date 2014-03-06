@@ -11,14 +11,14 @@ void OneScene::loadContents()
 {
     ThreeSegmentScene::loadContents();
     
-    ThreeSegmentController* threeSegmentController=static_cast<ThreeSegmentController*>(getLayerControllerByName("ThreeSegmentController"));
+    ThreeSegmentController* threeSegmentController=static_cast<ThreeSegmentController*>(getControllerByName("ThreeSegmentController"));
     
 	OneController* oneController=new OneController();
 	oneController->init();
     oneController->setPreferredContentSize(threeSegmentController->getBodyLayer()->getContentSize());
     
-	threeSegmentController->getBodyLayer()->addChild(oneController->getLayer());
-    addLayerController(oneController);
+	threeSegmentController->getBodyLayer()->addChild(oneController->getView());
+    addController(oneController);
     oneController->release();
     
 }

@@ -1,16 +1,22 @@
-//
-//  SceneRegisterData.h
-//  CCMVC
-//
-//  Created by duanhouhai on 13-11-1.
-//
-//
+#ifndef CCMVC_SCENES_SCENEREGISTERDATA_H_
+#define CCMVC_SCENES_SCENEREGISTERDATA_H_
 
-#ifndef CCMVC_SceneRegisterData_h
-#define CCMVC_SceneRegisterData_h
-
-#include "yhmvc/Core/SceneDirector.h"
+#include <yhmvc/Core/SceneDirector.h>
 #include "GameMacros.h"
+//this file generate by tools.do not modify directorly
+
+#include "Scenes/InitializeScene.h"
+#include "Scenes/MainScene.h"
+#include "Scenes/ShopScene.h"
+#include "Scenes/OneScene.h"
+#include "Scenes/TwoScene.h"
+#include "Scenes/ThreeScene.h"
+#include "Scenes/BuildScene.h"
+#include "Scenes/AutoBuildScene.h"
+#include "SceneBuilder/GameSceneBuilder.h"
+
+
+NS_MYGAME_BEGIN
 
 typedef struct SceneRegisterItem
 {
@@ -18,27 +24,19 @@ typedef struct SceneRegisterItem
     cocos2d::yhmvc::SceneCreate createFun;
 } SceneRegisterItem;
 
-//TODO use generate tool to create this file
-#include "SceneDefine.h"
-#include "Scenes/InitializeScene.h"
-#include "Scenes/MainScene.h"
-#include "Scenes/ShopScene.h"
-#include "Scenes/OneScene.h"
-#include "Scenes/TwoScene.h"
-#include "Scenes/ThreeScene.h"
-
-NS_MYGAME_BEGIN
-
 static SceneRegisterItem kSceneRegisterData[]=
 {
-    {kInitializeScene,SCENE_CREATE_SELECTOR(InitializeScene::create)},
-    {kMainScene,SCENE_CREATE_SELECTOR(MainScene::create)},
-    {kShopScene,SCENE_CREATE_SELECTOR(ShopScene::create)},
-    {kOneScene,SCENE_CREATE_SELECTOR(OneScene::create)},
-    {kTwoScene,SCENE_CREATE_SELECTOR(TwoScene::create)},
-    {kThreeScene,SCENE_CREATE_SELECTOR(ThreeScene::create)}
+	{kInitializeScene,SCENE_CREATE_SELECTOR(InitializeScene::create)},
+	{kMainScene,SCENE_CREATE_SELECTOR(MainScene::create)},
+	{kShopScene,SCENE_CREATE_SELECTOR(ShopScene::create)},
+	{kOneScene,SCENE_CREATE_SELECTOR(OneScene::create)},
+	{kTwoScene,SCENE_CREATE_SELECTOR(TwoScene::create)},
+	{kThreeScene,SCENE_CREATE_SELECTOR(ThreeScene::create)},
+	{kBuildScene,SCENE_CREATE_SELECTOR(BuildScene::create)},
+    {kTestAScene,SCENE_CREATE_SELECTOR(GameSceneBuilder::buildScene)},
+
 };
 
 NS_MYGAME_END
 
-#endif
+#endif //CCMVC_SCENES_SCENEREGISTERDATA_H_

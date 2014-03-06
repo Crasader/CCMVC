@@ -1,5 +1,4 @@
 #include "OneController.h"
-#include "yhmvc/Core/Layer.h"
 #include "Scenes/GameSceneDirector.h"
 
 USING_NS_CC;
@@ -18,13 +17,13 @@ OneController::~OneController(void)
     CCLOG("OneController destroy");
 }
 
-void OneController::layerDidLoad()
+void OneController::viewDidLoad()
 {
     CCSize contentSize=getPreferredContentSize();
     
     CCLabelTTF* label= CCLabelTTF::create("one scene", "Arial", 20);
     label->setPosition(ccp(contentSize.width/2,contentSize.height/2));
-    m_layer->addChild(label);
+    m_view->addChild(label);
     
     
     CCMenuItemLabel *startGameItem=CCMenuItemLabel::create(CCLabelTTF::create("back", "Arial", 20),
@@ -41,7 +40,7 @@ void OneController::layerDidLoad()
     CCMenu* menu=CCMenu::create(startGameItem,next, NULL);
     menu->setPosition( CCPointZero );
     
-    m_layer->addChild(menu);
+    m_view->addChild(menu);
 
 }
 

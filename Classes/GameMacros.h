@@ -1,13 +1,5 @@
-//
-//  GameMacros.h
-//  CCMVC
-//
-//  Created by duanhouhai on 13-11-1.
-//
-//
-
-#ifndef CCMVC_GameMacros_h
-#define CCMVC_GameMacros_h
+#ifndef CCMVC_GAMEMACROS_H_
+#define CCMVC_GAMEMACROS_H_
 
 #ifdef __cplusplus
 #define NS_MYGAME_BEGIN                     namespace cocos2d { namespace mygame {
@@ -19,4 +11,4 @@
 #define USING_NS_MYGAME
 #endif
 
-#endif
+#endif //CCMVC_GAMEMACROS_H_

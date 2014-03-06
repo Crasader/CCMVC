@@ -11,9 +11,9 @@ void ThreeSegmentScene2::loadContents()
     
     ThreeSegmentController2* threeSegmentController2=new ThreeSegmentController2();
     threeSegmentController2->init("ThreeSegmentController");
-    addLayerController(threeSegmentController2);
+    addController(threeSegmentController2);
     threeSegmentController2->release();
-    addChild(threeSegmentController2->getLayer());
+    addChild(threeSegmentController2->getView());
 }
 
 NS_MYGAME_END

@@ -1,13 +1,5 @@
-//
-//  Game.h
-//  CCMVC
-//
-//  Created by duanhouhai on 13-11-1.
-//
-//
-
-#ifndef __CCMVC__Game__
-#define __CCMVC__Game__
+#ifndef CCMVC_GAME_H_
+#define CCMVC_GAME_H_
 
 #include "cocos2d.h"
 #include "GameMacros.h"
@@ -28,4 +20,4 @@ NS_MYGAME_END
 
 
 
-#endif /* defined(__CCMVC__Game__) */
+#endif // CCMVC_GAME_H_

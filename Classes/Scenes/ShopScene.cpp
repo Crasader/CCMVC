@@ -12,8 +12,8 @@ void ShopScene::loadContents()
     
 	ShopController* shopController=new ShopController();
 	shopController->init();
-	this->addChild(shopController->getLayer());
-    addLayerController(shopController);
+	this->addChild(shopController->getView());
+    addController(shopController);
     shopController->release();
     
 }

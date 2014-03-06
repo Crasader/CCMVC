@@ -1,5 +1,4 @@
 #include "MainController.h"
-#include "yhmvc/Core/Layer.h"
 #include "Layers/HelloLayer.h"
 #include "Scenes/GameSceneDirector.h"
 
@@ -19,12 +18,12 @@ MainController::~MainController(void)
     CCLOG("MainController destroy");
 }
 
-void MainController::loadLayer()
+void MainController::loadView()
 {
 	HelloLayer* layer=new HelloLayer();
     layer->init();
     
-	setLayer(layer);
+	setView(layer);
 	layer->release();
 
 	CCSize screenSize= CCDirector::sharedDirector()->getWinSize();
@@ -68,7 +67,7 @@ void MainController::loadLayer()
 
 void MainController::menuCloseCallback(CCObject* pSender)
 {
-    m_layer->removeAllChildrenWithCleanup(true);
+    m_view->removeAllChildrenWithCleanup(true);
     CCDirector::sharedDirector()->end();
 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
@@ -78,7 +77,9 @@ void MainController::menuCloseCallback(CCObject* pSender)
 
 void MainController::menuRunCallback(CCObject* pSender)
 {
-    GameSceneDirector::getInstance()->pushScene(kShopScene);
+//    GameSceneDirector::getInstance()->pushScene(kShopScene);
+//    GameSceneDirector::getInstance()->pushScene(kBuildScene);
+    GameSceneDirector::getInstance()->pushScene(kTestAScene);
 }
 
 void MainController::menuStopCallback(CCObject* pSender)

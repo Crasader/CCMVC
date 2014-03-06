@@ -35,7 +35,7 @@ bool AppDelegate::applicationDidFinishLaunching()
 
 	//yhmvc::Window* window=yhmvc::Window::create();
 	//HelloWorldController* helloWorldController=new HelloWorldController();
-	//window->setRootLayerController(helloWorldController);
+	//window->setRootController(helloWorldController);
 	//helloWorldController->release();
 
     Game::getInstance()->setupSceneDirector();

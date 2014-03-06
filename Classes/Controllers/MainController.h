@@ -1,25 +1,26 @@
 #ifndef __HELLOWORLD_MainController_H__
 #define __HELLOWORLD_MainController_H__
 
-#include "yhmvc/Core/LayerController.h"
-#include "yhmvc/Core/Layer.h"
+#include <yhmvc/yhmvc.h>
 #include "GameMacros.h"
 
 NS_MYGAME_BEGIN
 
-class MainController:public cocos2d::yhmvc::LayerController
+class MainController:public cocos2d::yhmvc::Controller
 {
 public:
 	MainController(void);
 	~MainController(void);
 
-	void loadLayer();
+	void loadView();
 
 	void menuCloseCallback(cocos2d::CCObject* pSender);
     
     void menuRunCallback(cocos2d::CCObject* pSender);
     void menuStopCallback(cocos2d::CCObject* pSender);
     void menuMoveToCallback(cocos2d::CCObject* pSender);
+    
+    CREATE_FUNC(MainController);
 };
 
 NS_MYGAME_END

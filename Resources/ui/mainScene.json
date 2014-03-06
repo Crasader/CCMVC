@@ -1,0 +1,32 @@
+{
+	"version":1,
+	"formate":1,
+	"graphData":{
+		"type":"Scene",
+		"properties":{
+			"name":"root",
+			"controllers":[
+				{
+					"type":"MainController",
+					"properties":{
+						"name":"main"
+					}
+				},
+				{
+					"type":"HeaderController",
+					"properties":{
+						"name":"header",
+						"viewFile":"header.json"
+					}
+				},
+				{
+					"type":"FooterController",
+					"properties":{
+						"name":"footer",
+						"viewFile":"footer.json"
+					}
+				}
+			]
+		}
+	}
+}

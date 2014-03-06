@@ -50,7 +50,6 @@
 		15A3DA5B1682F826002FB0C5 /* CCTableView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15A3DA161682F826002FB0C5 /* CCTableView.cpp */; };
 		15A3DA5C1682F826002FB0C5 /* CCTableViewCell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15A3DA181682F826002FB0C5 /* CCTableViewCell.cpp */; };
 		15A3DA5D1682F826002FB0C5 /* HttpClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15A3DA1B1682F826002FB0C5 /* HttpClient.cpp */; };
-		15A3DA6A1682F886002FB0C5 /* libcocos2dx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15A3D8861682F7B3002FB0C5 /* libcocos2dx.a */; };
 		15A3DAEB1682F8A6002FB0C5 /* CDAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A3DA861682F8A6002FB0C5 /* CDAudioManager.m */; };
 		15A3DAEC1682F8A6002FB0C5 /* CDOpenALSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A3DA891682F8A6002FB0C5 /* CDOpenALSupport.m */; };
 		15A3DAED1682F8A6002FB0C5 /* CocosDenshion.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A3DA8B1682F8A6002FB0C5 /* CocosDenshion.m */; };
@@ -87,16 +86,6 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
-		57375B22186998410097EDD8 /* Builder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57375B0A186998410097EDD8 /* Builder.cpp */; };
-		57375B23186998410097EDD8 /* CCBBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57375B0C186998410097EDD8 /* CCBBuilder.cpp */; };
-		57375B24186998410097EDD8 /* YHBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57375B0E186998410097EDD8 /* YHBuilder.cpp */; };
-		57375B25186998410097EDD8 /* ControllerDirector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57375B11186998410097EDD8 /* ControllerDirector.cpp */; };
-		57375B26186998410097EDD8 /* NavigateController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57375B13186998410097EDD8 /* NavigateController.cpp */; };
-		57375B27186998410097EDD8 /* Layer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57375B16186998410097EDD8 /* Layer.cpp */; };
-		57375B28186998410097EDD8 /* LayerController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57375B18186998410097EDD8 /* LayerController.cpp */; };
-		57375B29186998410097EDD8 /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57375B1A186998410097EDD8 /* Scene.cpp */; };
-		57375B2A186998410097EDD8 /* SceneDirector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57375B1C186998410097EDD8 /* SceneDirector.cpp */; };
-		57375B2B186998410097EDD8 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57375B1E186998410097EDD8 /* Window.cpp */; };
 		573FEB1D1848726100E7C69E /* FooterController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 573FEB191848726100E7C69E /* FooterController.cpp */; };
 		573FEB1E1848726100E7C69E /* HeaderController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 573FEB1B1848726100E7C69E /* HeaderController.cpp */; };
 		573FEB2118487B1D00E7C69E /* ThreeSegmentScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 573FEB1F18487B1D00E7C69E /* ThreeSegmentScene.cpp */; };
@@ -117,6 +106,17 @@
 		5765D8EF18112B190032D0F1 /* InitializeController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5765D8ED18112B190032D0F1 /* InitializeController.cpp */; };
 		5797A5BB180E8DBD00BA5455 /* BaseScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5797A5B6180E8DBD00BA5455 /* BaseScene.cpp */; };
 		5797A5BF180E917100BA5455 /* HelloLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5797A5BD180E917100BA5455 /* HelloLayer.cpp */; };
+		57BEBA7418C6D19D00AA720B /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 57BEBA7218C6D19D00AA720B /* fonts */; };
+		57BEBA7518C6D19D00AA720B /* ui in Resources */ = {isa = PBXBuildFile; fileRef = 57BEBA7318C6D19D00AA720B /* ui */; };
+		57BEBA7618C6F4EB00AA720B /* libyhmvc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57BEBA7118C6D13D00AA720B /* libyhmvc.a */; };
+		57BEBA7718C6F4EE00AA720B /* libyhgui.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57BEBA6B18C6D13400AA720B /* libyhgui.a */; };
+		57BEBA7818C6F4F100AA720B /* libyhge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57BEBA6518C6D12A00AA720B /* libyhge.a */; };
+		57BEBA8918C6F72D00AA720B /* libcocos2dx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15A3D8861682F7B3002FB0C5 /* libcocos2dx.a */; };
+		57BEBA8C18C6F8B200AA720B /* BuildScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57BEBA8A18C6F8B200AA720B /* BuildScene.cpp */; };
+		57BEBA8F18C6F91900AA720B /* BuildController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57BEBA8D18C6F91900AA720B /* BuildController.cpp */; };
+		57BEBA9318C7124800AA720B /* AutoBuildScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57BEBA9118C7124800AA720B /* AutoBuildScene.cpp */; };
+		57BEBA9C18C81FB600AA720B /* GameSceneBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57BEBA9A18C81FB600AA720B /* GameSceneBuilder.cpp */; };
+		57BEBA9F18C8208900AA720B /* BuilderExternal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57BEBA9D18C8208900AA720B /* BuilderExternal.cpp */; };
 		57EA398F1823A10B001A0E96 /* ShopController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57EA398D1823A10B001A0E96 /* ShopController.cpp */; };
 		57EA39921823A110001A0E96 /* ShopScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57EA39901823A110001A0E96 /* ShopScene.cpp */; };
 		7855E0E1153FEF240059DD9A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7855E0DF153FEF240059DD9A /* Default.png */; };
@@ -143,12 +143,26 @@
 			remoteGlobalIDString = 1551A33F158F2AB200E66CFE;
 			remoteInfo = cocos2dx;
 		};
-		15A3DA681682F881002FB0C5 /* PBXContainerItemProxy */ = {
+		57BEBA6418C6D12A00AA720B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 15A3D87E1682F7B3002FB0C5 /* cocos2dx.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 1551A33E158F2AB200E66CFE;
-			remoteInfo = cocos2dx;
+			containerPortal = 57BEBA6018C6D12900AA720B /* yhge.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 578E5F5318680D830042319C;
+			remoteInfo = yhge;
+		};
+		57BEBA6A18C6D13400AA720B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57BEBA6618C6D13400AA720B /* yhgui.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 57B26176186818A200EFF1FD;
+			remoteInfo = yhgui;
+		};
+		57BEBA7018C6D13D00AA720B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57BEBA6C18C6D13D00AA720B /* yhmvc.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 57C664731867EBE600018691;
+			remoteInfo = yhmvc;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -319,28 +333,6 @@
 		1D6058910D05DD3D006BFB54 /* CCMVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCMVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		57375B0A186998410097EDD8 /* Builder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Builder.cpp; sourceTree = "<group>"; };
-		57375B0B186998410097EDD8 /* Builder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Builder.h; sourceTree = "<group>"; };
-		57375B0C186998410097EDD8 /* CCBBuilder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCBBuilder.cpp; sourceTree = "<group>"; };
-		57375B0D186998410097EDD8 /* CCBBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBBuilder.h; sourceTree = "<group>"; };
-		57375B0E186998410097EDD8 /* YHBuilder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YHBuilder.cpp; sourceTree = "<group>"; };
-		57375B0F186998410097EDD8 /* YHBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHBuilder.h; sourceTree = "<group>"; };
-		57375B11186998410097EDD8 /* ControllerDirector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ControllerDirector.cpp; sourceTree = "<group>"; };
-		57375B12186998410097EDD8 /* ControllerDirector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerDirector.h; sourceTree = "<group>"; };
-		57375B13186998410097EDD8 /* NavigateController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NavigateController.cpp; sourceTree = "<group>"; };
-		57375B14186998410097EDD8 /* NavigateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigateController.h; sourceTree = "<group>"; };
-		57375B16186998410097EDD8 /* Layer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Layer.cpp; sourceTree = "<group>"; };
-		57375B17186998410097EDD8 /* Layer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Layer.h; sourceTree = "<group>"; };
-		57375B18186998410097EDD8 /* LayerController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LayerController.cpp; sourceTree = "<group>"; };
-		57375B19186998410097EDD8 /* LayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerController.h; sourceTree = "<group>"; };
-		57375B1A186998410097EDD8 /* Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scene.cpp; sourceTree = "<group>"; };
-		57375B1B186998410097EDD8 /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
-		57375B1C186998410097EDD8 /* SceneDirector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneDirector.cpp; sourceTree = "<group>"; };
-		57375B1D186998410097EDD8 /* SceneDirector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDirector.h; sourceTree = "<group>"; };
-		57375B1E186998410097EDD8 /* Window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Window.cpp; sourceTree = "<group>"; };
-		57375B1F186998410097EDD8 /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
-		57375B20186998410097EDD8 /* yhmvc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yhmvc.h; sourceTree = "<group>"; };
-		57375B21186998410097EDD8 /* YHMVCMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHMVCMacros.h; sourceTree = "<group>"; };
 		573FEB191848726100E7C69E /* FooterController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FooterController.cpp; sourceTree = "<group>"; };
 		573FEB1A1848726100E7C69E /* FooterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FooterController.h; sourceTree = "<group>"; };
 		573FEB1B1848726100E7C69E /* HeaderController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HeaderController.cpp; sourceTree = "<group>"; };
@@ -383,6 +375,21 @@
 		5797A5B7180E8DBD00BA5455 /* BaseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseScene.h; sourceTree = "<group>"; };
 		5797A5BD180E917100BA5455 /* HelloLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloLayer.cpp; sourceTree = "<group>"; };
 		5797A5BE180E917100BA5455 /* HelloLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloLayer.h; sourceTree = "<group>"; };
+		57BEBA6018C6D12900AA720B /* yhge.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = yhge.xcodeproj; path = ../../yhge/proj.ios/yhge.xcodeproj; sourceTree = "<group>"; };
+		57BEBA6618C6D13400AA720B /* yhgui.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = yhgui.xcodeproj; path = ../../yhgui/proj.ios/yhgui.xcodeproj; sourceTree = "<group>"; };
+		57BEBA6C18C6D13D00AA720B /* yhmvc.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = yhmvc.xcodeproj; path = ../../yhmvc/proj.ios/yhmvc.xcodeproj; sourceTree = "<group>"; };
+		57BEBA7218C6D19D00AA720B /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
+		57BEBA7318C6D19D00AA720B /* ui */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ui; sourceTree = "<group>"; };
+		57BEBA8A18C6F8B200AA720B /* BuildScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BuildScene.cpp; sourceTree = "<group>"; };
+		57BEBA8B18C6F8B200AA720B /* BuildScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildScene.h; sourceTree = "<group>"; };
+		57BEBA8D18C6F91900AA720B /* BuildController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BuildController.cpp; sourceTree = "<group>"; };
+		57BEBA8E18C6F91900AA720B /* BuildController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildController.h; sourceTree = "<group>"; };
+		57BEBA9118C7124800AA720B /* AutoBuildScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AutoBuildScene.cpp; sourceTree = "<group>"; };
+		57BEBA9218C7124800AA720B /* AutoBuildScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoBuildScene.h; sourceTree = "<group>"; };
+		57BEBA9A18C81FB600AA720B /* GameSceneBuilder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameSceneBuilder.cpp; sourceTree = "<group>"; };
+		57BEBA9B18C81FB600AA720B /* GameSceneBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSceneBuilder.h; sourceTree = "<group>"; };
+		57BEBA9D18C8208900AA720B /* BuilderExternal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BuilderExternal.cpp; sourceTree = "<group>"; };
+		57BEBA9E18C8208900AA720B /* BuilderExternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuilderExternal.h; sourceTree = "<group>"; };
 		57EA398C1823958E001A0E96 /* SceneRegisterData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneRegisterData.h; sourceTree = "<group>"; };
 		57EA398D1823A10B001A0E96 /* ShopController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShopController.cpp; sourceTree = "<group>"; };
 		57EA398E1823A10B001A0E96 /* ShopController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopController.h; sourceTree = "<group>"; };
@@ -410,7 +417,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15A3DA6A1682F886002FB0C5 /* libcocos2dx.a in Frameworks */,
+				57BEBA8918C6F72D00AA720B /* libcocos2dx.a in Frameworks */,
+				57BEBA7818C6F4F100AA720B /* libyhge.a in Frameworks */,
+				57BEBA7718C6F4EE00AA720B /* libyhgui.a in Frameworks */,
+				57BEBA7618C6F4EB00AA720B /* libyhmvc.a in Frameworks */,
 				1ACB3244164770DE00914215 /* libcurl.a in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
@@ -648,6 +658,7 @@
 				5797A5B1180E8DBD00BA5455 /* Controllers */,
 				5797A5B4180E8DBD00BA5455 /* Layers */,
 				5797A5B5180E8DBD00BA5455 /* Scenes */,
+				57BEBA9918C81FB600AA720B /* SceneBuilder */,
 				1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */,
 				1AFAF8B416D35DE700DB1158 /* AppDelegate.h */,
 				574619E118238B2400B44F4F /* Game.cpp */,
@@ -716,7 +727,9 @@
 			isa = PBXGroup;
 			children = (
 				15A3D87E1682F7B3002FB0C5 /* cocos2dx.xcodeproj */,
-				57375B08186998410097EDD8 /* yhmvc */,
+				57BEBA6018C6D12900AA720B /* yhge.xcodeproj */,
+				57BEBA6618C6D13400AA720B /* yhgui.xcodeproj */,
+				57BEBA6C18C6D13D00AA720B /* yhmvc.xcodeproj */,
 				15AA9C4015B7EC450033D6C2 /* Classes */,
 				15A3DA6B1682F8A6002FB0C5 /* CocosDenshion */,
 				15A3D9B31682F826002FB0C5 /* extensions */,
@@ -746,63 +759,11 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		57375B08186998410097EDD8 /* yhmvc */ = {
-			isa = PBXGroup;
-			children = (
-				57375B09186998410097EDD8 /* Builders */,
-				57375B10186998410097EDD8 /* Controllers */,
-				57375B15186998410097EDD8 /* Core */,
-				57375B20186998410097EDD8 /* yhmvc.h */,
-				57375B21186998410097EDD8 /* YHMVCMacros.h */,
-			);
-			name = yhmvc;
-			path = ../yhmvc/yhmvc;
-			sourceTree = "<group>";
-		};
-		57375B09186998410097EDD8 /* Builders */ = {
-			isa = PBXGroup;
-			children = (
-				57375B0A186998410097EDD8 /* Builder.cpp */,
-				57375B0B186998410097EDD8 /* Builder.h */,
-				57375B0C186998410097EDD8 /* CCBBuilder.cpp */,
-				57375B0D186998410097EDD8 /* CCBBuilder.h */,
-				57375B0E186998410097EDD8 /* YHBuilder.cpp */,
-				57375B0F186998410097EDD8 /* YHBuilder.h */,
-			);
-			path = Builders;
-			sourceTree = "<group>";
-		};
-		57375B10186998410097EDD8 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				57375B11186998410097EDD8 /* ControllerDirector.cpp */,
-				57375B12186998410097EDD8 /* ControllerDirector.h */,
-				57375B13186998410097EDD8 /* NavigateController.cpp */,
-				57375B14186998410097EDD8 /* NavigateController.h */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		57375B15186998410097EDD8 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				57375B16186998410097EDD8 /* Layer.cpp */,
-				57375B17186998410097EDD8 /* Layer.h */,
-				57375B18186998410097EDD8 /* LayerController.cpp */,
-				57375B19186998410097EDD8 /* LayerController.h */,
-				57375B1A186998410097EDD8 /* Scene.cpp */,
-				57375B1B186998410097EDD8 /* Scene.h */,
-				57375B1C186998410097EDD8 /* SceneDirector.cpp */,
-				57375B1D186998410097EDD8 /* SceneDirector.h */,
-				57375B1E186998410097EDD8 /* Window.cpp */,
-				57375B1F186998410097EDD8 /* Window.h */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
 		5797A5B1180E8DBD00BA5455 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				57BEBA8D18C6F91900AA720B /* BuildController.cpp */,
+				57BEBA8E18C6F91900AA720B /* BuildController.h */,
 				573FEB191848726100E7C69E /* FooterController.cpp */,
 				573FEB1A1848726100E7C69E /* FooterController.h */,
 				573FEB1B1848726100E7C69E /* HeaderController.cpp */,
@@ -841,8 +802,12 @@
 		5797A5B5180E8DBD00BA5455 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				57BEBA9118C7124800AA720B /* AutoBuildScene.cpp */,
+				57BEBA9218C7124800AA720B /* AutoBuildScene.h */,
 				5797A5B6180E8DBD00BA5455 /* BaseScene.cpp */,
 				5797A5B7180E8DBD00BA5455 /* BaseScene.h */,
+				57BEBA8A18C6F8B200AA720B /* BuildScene.cpp */,
+				57BEBA8B18C6F8B200AA720B /* BuildScene.h */,
 				574619E51823919800B44F4F /* GameSceneDirector.cpp */,
 				574619E61823919800B44F4F /* GameSceneDirector.h */,
 				5765D8EA18112A960032D0F1 /* InitializeScene.cpp */,
@@ -868,9 +833,47 @@
 			path = ../Classes/Scenes;
 			sourceTree = "<group>";
 		};
+		57BEBA6118C6D12900AA720B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57BEBA6518C6D12A00AA720B /* libyhge.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57BEBA6718C6D13400AA720B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57BEBA6B18C6D13400AA720B /* libyhgui.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57BEBA6D18C6D13D00AA720B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57BEBA7118C6D13D00AA720B /* libyhmvc.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57BEBA9918C81FB600AA720B /* SceneBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				57BEBA9D18C8208900AA720B /* BuilderExternal.cpp */,
+				57BEBA9E18C8208900AA720B /* BuilderExternal.h */,
+				57BEBA9A18C81FB600AA720B /* GameSceneBuilder.cpp */,
+				57BEBA9B18C81FB600AA720B /* GameSceneBuilder.h */,
+			);
+			name = SceneBuilder;
+			path = ../Classes/SceneBuilder;
+			sourceTree = "<group>";
+		};
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				57BEBA7218C6D19D00AA720B /* fonts */,
+				57BEBA7318C6D19D00AA720B /* ui */,
 				1AFAF8B916D35E4900DB1158 /* CloseNormal.png */,
 				1AFAF8BA16D35E4900DB1158 /* CloseSelected.png */,
 				1AFAF8BB16D35E4900DB1158 /* HelloWorld.png */,
@@ -932,6 +935,18 @@
 					ProductGroup = 15A3D87F1682F7B3002FB0C5 /* Products */;
 					ProjectRef = 15A3D87E1682F7B3002FB0C5 /* cocos2dx.xcodeproj */;
 				},
+				{
+					ProductGroup = 57BEBA6118C6D12900AA720B /* Products */;
+					ProjectRef = 57BEBA6018C6D12900AA720B /* yhge.xcodeproj */;
+				},
+				{
+					ProductGroup = 57BEBA6718C6D13400AA720B /* Products */;
+					ProjectRef = 57BEBA6618C6D13400AA720B /* yhgui.xcodeproj */;
+				},
+				{
+					ProductGroup = 57BEBA6D18C6D13D00AA720B /* Products */;
+					ProjectRef = 57BEBA6C18C6D13D00AA720B /* yhmvc.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -948,6 +963,27 @@
 			remoteRef = 15A3D8851682F7B3002FB0C5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		57BEBA6518C6D12A00AA720B /* libyhge.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libyhge.a;
+			remoteRef = 57BEBA6418C6D12A00AA720B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		57BEBA6B18C6D13400AA720B /* libyhgui.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libyhgui.a;
+			remoteRef = 57BEBA6A18C6D13400AA720B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		57BEBA7118C6D13D00AA720B /* libyhmvc.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libyhmvc.a;
+			remoteRef = 57BEBA7018C6D13D00AA720B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -955,9 +991,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57BEBA7418C6D19D00AA720B /* fonts in Resources */,
 				7855E0E1153FEF240059DD9A /* Default.png in Resources */,
 				D4EF949A15BD2D8B00D803EB /* Icon-57.png in Resources */,
 				D4EF949C15BD2D8E00D803EB /* Icon-114.png in Resources */,
+				57BEBA7518C6D19D00AA720B /* ui in Resources */,
 				D4EF949E15BD2D9600D803EB /* Icon-72.png in Resources */,
 				D4EF94A015BD2D9800D803EB /* Icon-144.png in Resources */,
 				D41A0AD1160F154A004552AE /* Default-568h@2x.png in Resources */,
@@ -983,10 +1021,8 @@
 				573FEB4B1850248100E7C69E /* ThreeController.cpp in Sources */,
 				15A3DA341682F826002FB0C5 /* CCBReader.cpp in Sources */,
 				15A3DA351682F826002FB0C5 /* CCBSequence.cpp in Sources */,
-				57375B24186998410097EDD8 /* YHBuilder.cpp in Sources */,
 				573FEB3C184DAE7400E7C69E /* OneScene.cpp in Sources */,
 				15A3DA361682F826002FB0C5 /* CCBSequenceProperty.cpp in Sources */,
-				57375B22186998410097EDD8 /* Builder.cpp in Sources */,
 				15A3DA371682F826002FB0C5 /* CCBValue.cpp in Sources */,
 				15A3DA381682F826002FB0C5 /* CCControlButtonLoader.cpp in Sources */,
 				15A3DA391682F826002FB0C5 /* CCControlLoader.cpp in Sources */,
@@ -994,6 +1030,7 @@
 				15A3DA3B1682F826002FB0C5 /* CCLabelBMFontLoader.cpp in Sources */,
 				15A3DA3C1682F826002FB0C5 /* CCLabelTTFLoader.cpp in Sources */,
 				15A3DA3D1682F826002FB0C5 /* CCLayerColorLoader.cpp in Sources */,
+				57BEBA9F18C8208900AA720B /* BuilderExternal.cpp in Sources */,
 				15A3DA3E1682F826002FB0C5 /* CCLayerGradientLoader.cpp in Sources */,
 				15A3DA3F1682F826002FB0C5 /* CCLayerLoader.cpp in Sources */,
 				15A3DA401682F826002FB0C5 /* CCMenuItemImageLoader.cpp in Sources */,
@@ -1012,9 +1049,9 @@
 				15A3DA491682F826002FB0C5 /* CCControl.cpp in Sources */,
 				15A3DA4A1682F826002FB0C5 /* CCControlButton.cpp in Sources */,
 				15A3DA4B1682F826002FB0C5 /* CCControlColourPicker.cpp in Sources */,
+				57BEBA8C18C6F8B200AA720B /* BuildScene.cpp in Sources */,
 				15A3DA4C1682F826002FB0C5 /* CCControlHuePicker.cpp in Sources */,
 				5797A5BB180E8DBD00BA5455 /* BaseScene.cpp in Sources */,
-				57375B27186998410097EDD8 /* Layer.cpp in Sources */,
 				573FEB1D1848726100E7C69E /* FooterController.cpp in Sources */,
 				15A3DA4D1682F826002FB0C5 /* CCControlPotentiometer.cpp in Sources */,
 				15A3DA4E1682F826002FB0C5 /* CCControlSaturationBrightnessPicker.cpp in Sources */,
@@ -1023,25 +1060,23 @@
 				15A3DA511682F826002FB0C5 /* CCControlSwitch.cpp in Sources */,
 				15A3DA521682F826002FB0C5 /* CCControlUtils.cpp in Sources */,
 				15A3DA531682F826002FB0C5 /* CCInvocation.cpp in Sources */,
-				57375B23186998410097EDD8 /* CCBBuilder.cpp in Sources */,
 				15A3DA541682F826002FB0C5 /* CCScale9Sprite.cpp in Sources */,
 				15A3DA551682F826002FB0C5 /* CCEditBox.cpp in Sources */,
 				57EA39921823A110001A0E96 /* ShopScene.cpp in Sources */,
 				15A3DA571682F826002FB0C5 /* CCEditBoxImplIOS.mm in Sources */,
 				15A3DA591682F826002FB0C5 /* CCScrollView.cpp in Sources */,
-				57375B29186998410097EDD8 /* Scene.cpp in Sources */,
 				15A3DA5A1682F826002FB0C5 /* CCSorting.cpp in Sources */,
 				15A3DA5B1682F826002FB0C5 /* CCTableView.cpp in Sources */,
 				574619E318238B2400B44F4F /* Game.cpp in Sources */,
 				15A3DA5C1682F826002FB0C5 /* CCTableViewCell.cpp in Sources */,
 				15A3DA5D1682F826002FB0C5 /* HttpClient.cpp in Sources */,
+				57BEBA8F18C6F91900AA720B /* BuildController.cpp in Sources */,
 				15A3DAEB1682F8A6002FB0C5 /* CDAudioManager.m in Sources */,
 				15A3DAEC1682F8A6002FB0C5 /* CDOpenALSupport.m in Sources */,
 				573FEB3F184F35CE00E7C69E /* ThreeSegmentScene2.cpp in Sources */,
+				57BEBA9C18C81FB600AA720B /* GameSceneBuilder.cpp in Sources */,
 				15A3DAED1682F8A6002FB0C5 /* CocosDenshion.m in Sources */,
-				57375B28186998410097EDD8 /* LayerController.cpp in Sources */,
 				15A3DAEE1682F8A6002FB0C5 /* SimpleAudioEngine.mm in Sources */,
-				57375B25186998410097EDD8 /* ControllerDirector.cpp in Sources */,
 				5765D8EF18112B190032D0F1 /* InitializeController.cpp in Sources */,
 				57EA398F1823A10B001A0E96 /* ShopController.cpp in Sources */,
 				15A3DAEF1682F8A6002FB0C5 /* SimpleAudioEngine_objc.m in Sources */,
@@ -1056,14 +1091,12 @@
 				1A40E7201727BF49006D4861 /* AnimationState.cpp in Sources */,
 				1A40E7211727BF49006D4861 /* AnimationStateData.cpp in Sources */,
 				1A40E7221727BF49006D4861 /* Atlas.cpp in Sources */,
-				57375B2A186998410097EDD8 /* SceneDirector.cpp in Sources */,
 				574619DA18237D7200B44F4F /* MainController.cpp in Sources */,
-				57375B2B186998410097EDD8 /* Window.cpp in Sources */,
 				1A40E7231727BF49006D4861 /* AtlasAttachmentLoader.cpp in Sources */,
 				573FEB42184F37DF00E7C69E /* TwoScene.cpp in Sources */,
 				1A40E7241727BF49006D4861 /* Attachment.cpp in Sources */,
 				1A40E7251727BF49006D4861 /* AttachmentLoader.cpp in Sources */,
-				57375B26186998410097EDD8 /* NavigateController.cpp in Sources */,
+				57BEBA9318C7124800AA720B /* AutoBuildScene.cpp in Sources */,
 				1A40E7261727BF49006D4861 /* Bone.cpp in Sources */,
 				1A40E7271727BF49006D4861 /* BoneData.cpp in Sources */,
 				5765D8EC18112A960032D0F1 /* InitializeScene.cpp in Sources */,
@@ -1088,7 +1121,6 @@
 		15A3DA691682F881002FB0C5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = cocos2dx;
-			targetProxy = 15A3DA681682F881002FB0C5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1121,7 +1153,9 @@
 					"$(SRCROOT)/../../../cocos2dx/platform/third_party/ios",
 					"$(SRCROOT)/../../../cocos2dx/platform/ios",
 					"$(SRCROOT)/../../../cocos2dx/platform/ios/Simulation",
-					../yhmvc,
+					"$(SRCROOT)/../../yhge",
+					"$(SRCROOT)/../../yhgui",
+					"$(SRCROOT)/../../yhmvc",
 					../Classes,
 					../,
 				);
@@ -1135,7 +1169,7 @@
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
-				VALID_ARCHS = "armv6 armv7 i386";
+				VALID_ARCHS = "armv64 armv7 i386";
 			};
 			name = Debug;
 		};
@@ -1165,7 +1199,9 @@
 					"$(SRCROOT)/../../../cocos2dx/platform/third_party/ios",
 					"$(SRCROOT)/../../../cocos2dx/platform/ios",
 					"$(SRCROOT)/../../../cocos2dx/platform/ios/Simulation",
-					../yhmvc,
+					"$(SRCROOT)/../../yhge",
+					"$(SRCROOT)/../../yhgui",
+					"$(SRCROOT)/../../yhmvc",
 					../Classes,
 					../,
 				);
@@ -1179,6 +1215,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv64 armv7 i386";
 			};
 			name = Release;
 		};

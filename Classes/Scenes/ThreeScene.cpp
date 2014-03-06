@@ -10,10 +10,10 @@ void ThreeScene::loadContents()
 {
 	ThreeController* threeController=new ThreeController();
 	threeController->init();
-    addLayerController(threeController);
+    addController(threeController);
     threeController->release();
     
-    addChild(threeController->getLayer());
+    addChild(threeController->getView());
 }
 
 NS_MYGAME_END

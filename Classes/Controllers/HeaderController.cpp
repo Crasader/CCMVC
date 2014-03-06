@@ -1,5 +1,4 @@
 #include "HeaderController.h"
-#include "yhmvc/Core/Layer.h"
 #include "Scenes/GameSceneDirector.h"
 
 USING_NS_CC;
@@ -18,7 +17,7 @@ HeaderController::~HeaderController(void)
     
 }
 
-void HeaderController::layerDidLoad()
+void HeaderController::viewDidLoad()
 {
     CCSize contentSize=getPreferredContentSize();
     
@@ -30,22 +29,22 @@ void HeaderController::layerDidLoad()
     CCMenu* menu=CCMenu::create(startGameItem, NULL);
     menu->setPosition( CCPointZero );
     
-    m_layer->addChild(menu);
+    m_view->addChild(menu);
     
 //    CCLayerColor* layer1=CCLayerColor::create(ccc4(128, 255, 128, 255), contentSize.width, contentSize.height);
-//    m_layer->addChild(layer1);
+//    m_view->addChild(layer1);
 //
 //    CCLayerColor* layer2=CCLayerColor::create(ccc4(128, 255, 255, 255), screenSize.width, 160);
 //    layer2->setPosition(ccp(0.0, -160));
-//    m_layer->addChild(layer2);
+//    m_view->addChild(layer2);
 //    
 //    CCLayerColor* layer3=CCLayerColor::create(ccc4(255, 255, 128, 255), screenSize.width, 160);
 //    layer3->setPosition(ccp(0.0, -320));
-//    m_layer->addChild(layer3);
+//    m_view->addChild(layer3);
 //    
 //    CCLayerColor* layer4=CCLayerColor::create(ccc4(128, 128, 128, 255), screenSize.width, 160);
 //    layer4->setPosition(ccp(0.0, -480));
-//    m_layer->addChild(layer4);
+//    m_view->addChild(layer4);
 }
 
 void HeaderController::showUserInfoCallback(CCObject* pSender)

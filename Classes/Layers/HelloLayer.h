@@ -9,11 +9,11 @@
 #ifndef __CCMVC__HelloLayer__
 #define __CCMVC__HelloLayer__
 
-#include "yhmvc/Core/Layer.h"
+#include <yhmvc/yhmvc.h>
 #include "GameMacros.h"
 
 NS_MYGAME_BEGIN
-class HelloLayer:public cocos2d::yhmvc::Layer
+class HelloLayer:public cocos2d::yhmvc::View
 {
     
 public:

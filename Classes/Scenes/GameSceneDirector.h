@@ -20,6 +20,12 @@ class GameSceneDirector:public yhmvc::SceneDirector
 public:
     
     static GameSceneDirector* getInstance();
+    
+protected:
+//    /**
+//     * 使用注册的Scene创建函数，创建一个Scene
+//     */
+//    virtual yhmvc::Scene* createScene(const std::string& name);
 };
 
 NS_MYGAME_END

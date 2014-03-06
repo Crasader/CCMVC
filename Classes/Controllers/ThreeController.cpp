@@ -1,5 +1,4 @@
 #include "ThreeController.h"
-#include "yhmvc/Core/Layer.h"
 #include "Scenes/GameSceneDirector.h"
 
 USING_NS_CC;
@@ -18,9 +17,9 @@ ThreeController::~ThreeController(void)
     CCLOG("ThreeController destroy");
 }
 
-void ThreeController::layerDidLoad()
+void ThreeController::viewDidLoad()
 {
-    ThreeSegmentController2::layerDidLoad();
+    ThreeSegmentController2::viewDidLoad();
     
     //注意。layer与bodyLayer不要用混。
     

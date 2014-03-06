@@ -1,5 +1,4 @@
 #include "InitializeController.h"
-#include "yhmvc/Core/Layer.h"
 #include "Scenes/GameSceneDirector.h"
 
 USING_NS_CC;
@@ -18,7 +17,7 @@ InitializeController::~InitializeController(void)
     CCLOG("InitializeController destroy");
 }
 
-void InitializeController::layerDidLoad()
+void InitializeController::viewDidLoad()
 {
     
     CCSize screenSize=CCDirector::sharedDirector()->getWinSize();
@@ -31,7 +30,7 @@ void InitializeController::layerDidLoad()
     CCMenu* menu=CCMenu::create(startGameItem, NULL);
     menu->setPosition( CCPointZero );
     
-    m_layer->addChild(menu);
+    m_view->addChild(menu);
 
 }
 

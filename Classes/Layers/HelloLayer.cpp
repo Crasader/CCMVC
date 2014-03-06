@@ -27,7 +27,7 @@ HelloLayer::~HelloLayer()
 
 bool HelloLayer::init()
 {
-    if (!Layer::init()) {
+    if (!yhmvc::View::init()) {
         return false;
     }
     
