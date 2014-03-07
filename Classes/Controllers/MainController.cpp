@@ -18,7 +18,7 @@ MainController::~MainController(void)
     CCLOG("MainController destroy");
 }
 
-void MainController::loadLayer()
+void MainController::loadView()
 {
 	HelloLayer* layer=new HelloLayer();
     layer->init();

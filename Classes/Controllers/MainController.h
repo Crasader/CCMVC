@@ -12,7 +12,7 @@ public:
 	MainController(void);
 	~MainController(void);
 
-	void loadLayer();
+	void loadView();
 
 	void menuCloseCallback(cocos2d::CCObject* pSender);
     
