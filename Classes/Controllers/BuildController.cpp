@@ -1,6 +1,7 @@
 #include "BuildController.h"
 #include "Layers/HelloLayer.h"
 #include "Scenes/GameSceneDirector.h"
+#include "SceneBuilder/GameSceneBuilder.h"
 
 USING_NS_CC;
 USING_NS_CC_YHMVC;
@@ -19,14 +20,21 @@ BuildController::~BuildController(void)
 
 void BuildController::loadViewFromFile()
 {
-    MvcBuilder* builder=new MvcBuilder();
+    GameSceneBuilder* builder=new GameSceneBuilder();
     builder->init();
     builder->setElementEventParser(createEventParser());
     
-    yhmvc::View* view= static_cast<yhmvc::View*>(builder->buildWithJSONFile(m_viewFile.c_str()));
-    
+    yhmvc::View* view=yhmvc::View::create();
     setView(view);
     
+    yhmvc::View* subView= static_cast<yhmvc::View*>(builder->buildWithJSONFile(m_viewFile.c_str()));
+    if (subView) {
+        this->addChildController(subView->getController());
+        view->addChild(subView);
+    }
+    
+//    setView(view);
+
     builder->release();
 }
 

@@ -1034,16 +1034,16 @@
 /* Begin PBXShellScriptBuildPhase section */
 		57704EFF18C99CDB006B8A62 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputPaths = (
 			);
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
-			shellScript = "echo \"remove ui data\"\nrm -r \"${TARGET_BUILD_DIR}/${TARGET_NAME}.app/ui\"";
+			shellScript = "echo \"remove ui data\"\nrm -r -f \"${TARGET_BUILD_DIR}/${TARGET_NAME}.app/ui\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 

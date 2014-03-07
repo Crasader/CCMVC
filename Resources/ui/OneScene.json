@@ -1,0 +1,26 @@
+{
+	"version":1,
+	"formate":1,
+	"graphData":{
+		"type":"OneController",
+		"properties":{
+			"name":"root",
+			"controllers":[
+				{
+					"type":"HeaderController",
+					"properties":{
+						"name":"header",
+						"viewFile":"header.json"
+					}
+				},
+				{
+					"type":"FooterController",
+					"properties":{
+						"name":"footer",
+						"viewFile":"footer.json"
+					}
+				}
+			]
+		}
+	}
+}

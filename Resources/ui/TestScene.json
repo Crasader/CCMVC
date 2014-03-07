@@ -1,0 +1,49 @@
+{
+	"version":1,
+	"formate":1,
+	"graphData":{
+		"type":"OneController",
+		"properties":{
+			"name":"root",
+			"view":{
+				"type":"MvcView",
+				"children":[
+			
+					{
+						"type":"CCLabelTTF",
+						"properties":{
+							"text":"hello",
+							"x":100,
+							"y":0,
+							"fontFamily":"Marker Felt.ttf",
+							"fontSize":22
+						}
+					},
+					{
+				
+						"type":"BuildFooterController",
+						"properties":{
+							"name":"footer",
+							"view":{
+						
+								"type":"MvcView",
+								"children":[
+									{
+										"type":"CCLabelTTF",
+										"properties":{
+											"text":"hello",
+											"x":100,
+											"y":0,
+											"fontFamily":"Marker Felt.ttf",
+											"fontSize":22
+										}
+									}
+								]
+							}
+						}
+					}
+				]
+			}
+		}
+	}
+}

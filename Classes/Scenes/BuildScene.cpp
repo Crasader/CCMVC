@@ -21,7 +21,7 @@ void BuildScene::loadContents()
     
     BuildController* buildController=new BuildController();
     
-    buildController->setViewFile("ui/test.json");
+    buildController->setViewFile("ui/TestScene.json");
     
     document->addChild(buildController->getView());
     
