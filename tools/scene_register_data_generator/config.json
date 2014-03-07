@@ -1,7 +1,17 @@
 {	
 	"scenes":[
 		"InitializeScene","MainScene","ShopScene","OneScene","TwoScene","ThreeScene",
-		"BuildScene"
+		{
+			"name":"BuildMainScene",
+			"path":"SceneBuilder/GameSceneBuilder.h",
+			"creator":"GameSceneBuilder::buildScene"
+		},
+		"BuildScene",
+		{
+			"name":"TestAScene",
+			"path":"SceneBuilder/GameSceneBuilder.h",
+			"creator":"GameSceneBuilder::buildScene"
+		}
 	]
 		
 	

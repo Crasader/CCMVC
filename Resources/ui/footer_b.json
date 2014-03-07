@@ -1,0 +1,74 @@
+{
+	"version":1,
+	"formate":1,
+	"graphData":{
+		"type":"MvcView",
+		"properties":{
+			
+		},
+		"children":[
+			{
+				"type":"NormalButton",
+				"properties":{
+					"x":0,
+					"y":20,
+					
+					"label":{
+						"type":1,
+						"text":"back",
+						"fontFamily":"Arial-Black",
+						"fontSize":42
+					},
+									
+					"states":{
+						"normal":{
+							"color":[255,255,255]
+						},
+						
+						"pressed":{
+							"color":[255,255,0]
+						},
+						
+						"disabled":{
+							"color":[128,128,128]
+						}
+					}
+				},
+				"events":{
+					"touchUpInside":"back"
+				}
+			},
+			{
+				"type":"NormalButton",
+				"properties":{
+					"x":500,
+					"y":20,
+					
+					"label":{
+						"type":1,
+						"text":"home",
+						"fontFamily":"Arial-Black",
+						"fontSize":42
+					},
+									
+					"states":{
+						"normal":{
+							"color":[255,255,255]
+						},
+						
+						"pressed":{
+							"color":[255,255,0]
+						},
+						
+						"disabled":{
+							"color":[128,128,128]
+						}
+					}
+				},
+				"events":{
+					"touchUpInside":"home"
+				}
+			}
+		]
+	}
+}

@@ -27,7 +27,12 @@ void InitializeController::viewDidLoad()
                                                       menu_selector(InitializeController::startGameCallback));
     startGameItem->setPosition(ccp(screenSize.width-100,screenSize.height/2));
     
-    CCMenu* menu=CCMenu::create(startGameItem, NULL);
+    CCMenuItemLabel *buildItem=CCMenuItemLabel::create(CCLabelTTF::create("build", "Arial", 20),
+                                                           this,
+                                                           menu_selector(InitializeController::buildCallback));
+    buildItem->setPosition(ccp(screenSize.width-200,screenSize.height/2));
+    
+    CCMenu* menu=CCMenu::create(startGameItem, buildItem,NULL);
     menu->setPosition( CCPointZero );
     
     m_view->addChild(menu);
@@ -37,6 +42,11 @@ void InitializeController::viewDidLoad()
 void InitializeController::startGameCallback(CCObject* pSender)
 {
     cocos2d::mygame::GameSceneDirector::getInstance()->replaceScene(kMainScene);
+}
+
+void InitializeController::buildCallback(CCObject* pSender)
+{
+    cocos2d::mygame::GameSceneDirector::getInstance()->pushScene(kBuildMainScene);
 }
 
 NS_MYGAME_END

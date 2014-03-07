@@ -54,4 +54,14 @@ void OneController::nextCallback(CCObject* pSender)
     GameSceneDirector::getInstance()->replaceScene(kTwoScene);
 }
 
+/**
+ * @brief 创建事件管理器
+ */
+yhgui::ElementEventParser* OneController::createEventParser()
+{
+    yhgui::ElementEventParser* elementEventParser=BaseController::createEventParser();
+        
+    return elementEventParser;
+}
+
 NS_MYGAME_END

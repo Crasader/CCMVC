@@ -104,6 +104,10 @@
 		574619E71823919800B44F4F /* GameSceneDirector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 574619E51823919800B44F4F /* GameSceneDirector.cpp */; };
 		5765D8EC18112A960032D0F1 /* InitializeScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5765D8EA18112A960032D0F1 /* InitializeScene.cpp */; };
 		5765D8EF18112B190032D0F1 /* InitializeController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5765D8ED18112B190032D0F1 /* InitializeController.cpp */; };
+		57704EEB18C95AFB006B8A62 /* BaseController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57704EE918C95AFB006B8A62 /* BaseController.cpp */; };
+		57704EF418C9660C006B8A62 /* BuildFooterController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57704EF018C9660C006B8A62 /* BuildFooterController.cpp */; };
+		57704EF518C9660C006B8A62 /* BuildHeaderController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57704EF218C9660C006B8A62 /* BuildHeaderController.cpp */; };
+		57704EF918C96A12006B8A62 /* BuildMainController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57704EF718C96A12006B8A62 /* BuildMainController.cpp */; };
 		5797A5BB180E8DBD00BA5455 /* BaseScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5797A5B6180E8DBD00BA5455 /* BaseScene.cpp */; };
 		5797A5BF180E917100BA5455 /* HelloLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5797A5BD180E917100BA5455 /* HelloLayer.cpp */; };
 		57BEBA7418C6D19D00AA720B /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 57BEBA7218C6D19D00AA720B /* fonts */; };
@@ -371,6 +375,15 @@
 		5765D8EB18112A960032D0F1 /* InitializeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitializeScene.h; sourceTree = "<group>"; };
 		5765D8ED18112B190032D0F1 /* InitializeController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InitializeController.cpp; sourceTree = "<group>"; };
 		5765D8EE18112B190032D0F1 /* InitializeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitializeController.h; sourceTree = "<group>"; };
+		57704EE918C95AFB006B8A62 /* BaseController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseController.cpp; sourceTree = "<group>"; };
+		57704EEA18C95AFB006B8A62 /* BaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
+		57704EF018C9660C006B8A62 /* BuildFooterController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BuildFooterController.cpp; sourceTree = "<group>"; };
+		57704EF118C9660C006B8A62 /* BuildFooterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildFooterController.h; sourceTree = "<group>"; };
+		57704EF218C9660C006B8A62 /* BuildHeaderController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BuildHeaderController.cpp; sourceTree = "<group>"; };
+		57704EF318C9660C006B8A62 /* BuildHeaderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildHeaderController.h; sourceTree = "<group>"; };
+		57704EF618C96792006B8A62 /* BuilderDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuilderDefine.h; sourceTree = "<group>"; };
+		57704EF718C96A12006B8A62 /* BuildMainController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BuildMainController.cpp; sourceTree = "<group>"; };
+		57704EF818C96A12006B8A62 /* BuildMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildMainController.h; sourceTree = "<group>"; };
 		5797A5B6180E8DBD00BA5455 /* BaseScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseScene.cpp; sourceTree = "<group>"; };
 		5797A5B7180E8DBD00BA5455 /* BaseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseScene.h; sourceTree = "<group>"; };
 		5797A5BD180E917100BA5455 /* HelloLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloLayer.cpp; sourceTree = "<group>"; };
@@ -762,8 +775,16 @@
 		5797A5B1180E8DBD00BA5455 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				57704EE918C95AFB006B8A62 /* BaseController.cpp */,
+				57704EEA18C95AFB006B8A62 /* BaseController.h */,
 				57BEBA8D18C6F91900AA720B /* BuildController.cpp */,
 				57BEBA8E18C6F91900AA720B /* BuildController.h */,
+				57704EF018C9660C006B8A62 /* BuildFooterController.cpp */,
+				57704EF118C9660C006B8A62 /* BuildFooterController.h */,
+				57704EF218C9660C006B8A62 /* BuildHeaderController.cpp */,
+				57704EF318C9660C006B8A62 /* BuildHeaderController.h */,
+				57704EF718C96A12006B8A62 /* BuildMainController.cpp */,
+				57704EF818C96A12006B8A62 /* BuildMainController.h */,
 				573FEB191848726100E7C69E /* FooterController.cpp */,
 				573FEB1A1848726100E7C69E /* FooterController.h */,
 				573FEB1B1848726100E7C69E /* HeaderController.cpp */,
@@ -860,6 +881,7 @@
 		57BEBA9918C81FB600AA720B /* SceneBuilder */ = {
 			isa = PBXGroup;
 			children = (
+				57704EF618C96792006B8A62 /* BuilderDefine.h */,
 				57BEBA9D18C8208900AA720B /* BuilderExternal.cpp */,
 				57BEBA9E18C8208900AA720B /* BuilderExternal.h */,
 				57BEBA9A18C81FB600AA720B /* GameSceneBuilder.cpp */,
@@ -896,6 +918,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "CCMVC" */;
 			buildPhases = (
+				57704EFF18C99CDB006B8A62 /* ShellScript */,
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
@@ -1008,6 +1031,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		57704EFF18C99CDB006B8A62 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"remove ui data\"\nrm -r \"${TARGET_BUILD_DIR}/${TARGET_NAME}.app/ui\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -1015,6 +1054,7 @@
 			files = (
 				573FEB1E1848726100E7C69E /* HeaderController.cpp in Sources */,
 				15A3DA311682F826002FB0C5 /* CCBAnimationManager.cpp in Sources */,
+				57704EEB18C95AFB006B8A62 /* BaseController.cpp in Sources */,
 				15A3DA321682F826002FB0C5 /* CCBFileLoader.cpp in Sources */,
 				574619DD18237D8A00B44F4F /* MainScene.cpp in Sources */,
 				15A3DA331682F826002FB0C5 /* CCBKeyframe.cpp in Sources */,
@@ -1030,12 +1070,14 @@
 				15A3DA3B1682F826002FB0C5 /* CCLabelBMFontLoader.cpp in Sources */,
 				15A3DA3C1682F826002FB0C5 /* CCLabelTTFLoader.cpp in Sources */,
 				15A3DA3D1682F826002FB0C5 /* CCLayerColorLoader.cpp in Sources */,
+				57704EF418C9660C006B8A62 /* BuildFooterController.cpp in Sources */,
 				57BEBA9F18C8208900AA720B /* BuilderExternal.cpp in Sources */,
 				15A3DA3E1682F826002FB0C5 /* CCLayerGradientLoader.cpp in Sources */,
 				15A3DA3F1682F826002FB0C5 /* CCLayerLoader.cpp in Sources */,
 				15A3DA401682F826002FB0C5 /* CCMenuItemImageLoader.cpp in Sources */,
 				15A3DA411682F826002FB0C5 /* CCMenuItemLoader.cpp in Sources */,
 				573FEB2118487B1D00E7C69E /* ThreeSegmentScene.cpp in Sources */,
+				57704EF518C9660C006B8A62 /* BuildHeaderController.cpp in Sources */,
 				15A3DA421682F826002FB0C5 /* CCNode+CCBRelativePositioning.cpp in Sources */,
 				15A3DA431682F826002FB0C5 /* CCNodeLoader.cpp in Sources */,
 				15A3DA441682F826002FB0C5 /* CCNodeLoaderLibrary.cpp in Sources */,
@@ -1111,6 +1153,7 @@
 				1A40E72E1727BF49006D4861 /* Skin.cpp in Sources */,
 				1A40E72F1727BF49006D4861 /* Slot.cpp in Sources */,
 				1A40E7301727BF49006D4861 /* SlotData.cpp in Sources */,
+				57704EF918C96A12006B8A62 /* BuildMainController.cpp in Sources */,
 				1A40E7311727BF49006D4861 /* spine-cocos2dx.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,9 +11,8 @@
 #include "Scenes/OneScene.h"
 #include "Scenes/TwoScene.h"
 #include "Scenes/ThreeScene.h"
-#include "Scenes/BuildScene.h"
-#include "Scenes/AutoBuildScene.h"
 #include "SceneBuilder/GameSceneBuilder.h"
+#include "Scenes/BuildScene.h"
 
 
 NS_MYGAME_BEGIN
@@ -32,8 +31,9 @@ static SceneRegisterItem kSceneRegisterData[]=
 	{kOneScene,SCENE_CREATE_SELECTOR(OneScene::create)},
 	{kTwoScene,SCENE_CREATE_SELECTOR(TwoScene::create)},
 	{kThreeScene,SCENE_CREATE_SELECTOR(ThreeScene::create)},
+	{kBuildMainScene,SCENE_CREATE_SELECTOR(GameSceneBuilder::buildScene)},
 	{kBuildScene,SCENE_CREATE_SELECTOR(BuildScene::create)},
-    {kTestAScene,SCENE_CREATE_SELECTOR(GameSceneBuilder::buildScene)},
+	{kTestAScene,SCENE_CREATE_SELECTOR(GameSceneBuilder::buildScene)},
 
 };
 

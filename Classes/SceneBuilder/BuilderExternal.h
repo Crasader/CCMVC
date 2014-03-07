@@ -6,6 +6,10 @@
 #include <yhgui/yhgui.h>
 #include <yhmvc/yhmvc.h>
 #include "../Scenes/BaseScene.h"
+#include "../Controllers/MainController.h"
+#include "../Controllers/FooterController.h"
+#include "../Controllers/HeaderController.h"
+#include "../Controllers/OneController.h"
 
 NS_MYGAME_BEGIN
 
@@ -48,33 +52,21 @@ public:
 //==============Controller==============//
 
 /**
- * @brief MainController 结点创建
+ * @brief BaseController创建器，不直接使用。是父类
  */
-template<class T>
-class ControllerCreator:public yhmvc::ControllerCreator
+class BaseControllerCreator:public yhmvc::ControllerCreator
 {
 public:
     
-    virtual CCNode * createElement(const yhge::Json::Value& defineData,yhgui::UIBuilder* builder,CCNode* parent)
-    {
-        T* controller=new T();
-        yhmvc::View* view=createView(defineData[yhgui::kPropertyNameProperties], parent, builder);
-        controller->setView(view);
-        
-        controller->autorelease();
-        
-        return view;
-    }
+    virtual CCNode * createElement(const yhge::Json::Value& defineData,yhgui::UIBuilder* builder,CCNode* parent);
     
-    static ControllerCreator * creator() {
-        ControllerCreator * ptr = new T();
-        if(ptr != NULL) {
-            ptr->autorelease();
-            return ptr;
-        }
-        CC_SAFE_DELETE(ptr);
-        return NULL;
-    }
+    YHMVC_BUILDER_CREATE_CONTROLLER(BaseController);
+    
+    YHGUI_STATIC_NEW_AUTORELEASE_OBJECT_METHOD(BaseControllerCreator,creator);
+    
+protected:
+    
+    virtual yhmvc::View* loadView(BaseController* controller,const yhge::Json::Value& defineData,CCNode* parent,yhgui::UIBuilder* builder);
 };
 
 /**
@@ -84,7 +76,8 @@ class MainControllerCreator:public yhmvc::ControllerCreator
 {
 public:
     
-    virtual CCNode * createElement(const yhge::Json::Value& defineData,yhgui::UIBuilder* builder,CCNode* parent);
+    YHMVC_BUILDER_CREATE_CONTROLLER(MainController);
+    
     YHGUI_STATIC_NEW_AUTORELEASE_OBJECT_METHOD(MainControllerCreator,creator);
 };
 
@@ -95,7 +88,7 @@ class HeaderControllerCreator:public yhmvc::ControllerCreator
 {
 public:
     
-    virtual CCNode * createElement(const yhge::Json::Value& defineData,yhgui::UIBuilder* builder,CCNode* parent);
+    YHMVC_BUILDER_CREATE_CONTROLLER(HeaderController);
     YHGUI_STATIC_NEW_AUTORELEASE_OBJECT_METHOD(HeaderControllerCreator,creator);
 };
 
@@ -106,7 +99,7 @@ class FooterControllerCreator:public yhmvc::ControllerCreator
 {
 public:
     
-    virtual CCNode * createElement(const yhge::Json::Value& defineData,yhgui::UIBuilder* builder,CCNode* parent);
+    YHMVC_BUILDER_CREATE_CONTROLLER(FooterController);
     YHGUI_STATIC_NEW_AUTORELEASE_OBJECT_METHOD(FooterControllerCreator,creator);
 };
 
@@ -117,7 +110,7 @@ class OneControllerCreator:public yhmvc::ControllerCreator
 {
 public:
     
-    virtual CCNode * createElement(const yhge::Json::Value& defineData,yhgui::UIBuilder* builder,CCNode* parent);
+    YHMVC_BUILDER_CREATE_CONTROLLER(OneController);
     YHGUI_STATIC_NEW_AUTORELEASE_OBJECT_METHOD(OneControllerCreator,creator);
 };
 

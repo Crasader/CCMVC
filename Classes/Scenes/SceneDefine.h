@@ -9,10 +9,11 @@ static const char* kShopScene="ShopScene";
 static const char* kOneScene="OneScene";
 static const char* kTwoScene="TwoScene";
 static const char* kThreeScene="ThreeScene";
+static const char* kBuildMainScene="BuildMainScene";
 static const char* kBuildScene="BuildScene";
 static const char* kTestAScene="TestAScene";
 
 
-#pragma unused(kInitializeScene,kMainScene,kShopScene,kOneScene,kTwoScene,kThreeScene,kBuildScene)
+#pragma unused(kInitializeScene,kMainScene,kShopScene,kOneScene,kTwoScene,kThreeScene,kBuildMainScene,kBuildScene,kTestAScene)
 
 #endif //CCMVC_SCENES_SCENEDIFINE_H_

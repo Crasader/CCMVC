@@ -16,6 +16,8 @@ public:
 	void viewDidLoad();
 
 	void startGameCallback(cocos2d::CCObject* pSender);
+    
+    void buildCallback(cocos2d::CCObject* pSender);
 };
 NS_MYGAME_END
 

@@ -33,43 +33,27 @@ void BaseSceneParser::setupPropertyParser()
     registerPropertyParser(kElementPropertyController, BaseSceneControllerPropertyParser::create());
 }
 
-
-CCNode* MainControllerCreator::createElement(const yhge::Json::Value& defineData,yhgui::UIBuilder* builder,CCNode* parent)
+CCNode * BaseControllerCreator::createElement(const yhge::Json::Value& defineData,yhgui::UIBuilder* builder,CCNode* parent)
 {
-    MainController* controller=MainController::create();
-    yhmvc::View* view=createView(defineData[yhgui::kPropertyNameProperties], parent, builder);
-    controller->setView(view);
-    
-    return view;
+    return loadView(createController(), defineData, parent, builder);
 }
 
-
-CCNode* HeaderControllerCreator::createElement(const yhge::Json::Value& defineData,yhgui::UIBuilder* builder,CCNode* parent)
+yhmvc::View*
+BaseControllerCreator::loadView(
+                            BaseController* controller,
+                            const yhge::Json::Value& defineData,
+                            CCNode* parent,yhgui::UIBuilder* builder)
 {
-    HeaderController* controller=HeaderController::create();
-    yhmvc::View* view=createView(defineData[yhgui::kPropertyNameProperties], parent, builder);
-    controller->setView(view);
+    //替换事件处理
+    yhgui::ElementEventParser* elementEventParser=builder->getElementEventParser();
+    elementEventParser->retain();
     
-    return view;
-}
-
-
-CCNode* FooterControllerCreator::createElement(const yhge::Json::Value& defineData,yhgui::UIBuilder* builder,CCNode* parent)
-{
-    FooterController* controller=FooterController::create();
-    yhmvc::View* view=createView(defineData[yhgui::kPropertyNameProperties], parent, builder);
-    controller->setView(view);
+    builder->setElementEventParser(controller->createEventParser());
     
-    return view;
-}
-
-CCNode* OneControllerCreator::createElement(const yhge::Json::Value& defineData,yhgui::UIBuilder* builder,CCNode* parent)
-{
-    OneController* controller=new OneController();
-    yhmvc::View* view=createView(defineData[yhgui::kPropertyNameProperties], parent, builder);
-    controller->setView(view);
+    yhmvc::View* view=ControllerCreator::loadView(controller, defineData, parent, builder);
     
-    controller->autorelease();
+    builder->setElementEventParser(elementEventParser);
+    elementEventParser->release();
     
     return view;
 }

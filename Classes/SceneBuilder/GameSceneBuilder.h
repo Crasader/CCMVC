@@ -24,6 +24,8 @@ public:
      */
     void setupExtend();
     
+    void addController(const std::string& constroller,yhgui::ElementCreator* creator);
+    
     static BaseScene* buildScene();
     
     static std::string getSceneDefineFile(const std::string& sceneName);
