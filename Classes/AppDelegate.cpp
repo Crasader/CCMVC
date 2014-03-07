@@ -38,7 +38,7 @@ bool AppDelegate::applicationDidFinishLaunching()
     pDirector->runWithScene(window);
     
 	//HelloWorldController* helloWorldController=new HelloWorldController();
-	//window->setRootLayerController(helloWorldController);
+	//window->setRootController(helloWorldController);
 	//helloWorldController->release();
 
     Game::getInstance()->setupSceneDirector();

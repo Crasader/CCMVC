@@ -98,16 +98,9 @@
 		5748200318505AFB00234D94 /* TwoController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5748200118505AFB00234D94 /* TwoController.cpp */; };
 		5748200618505B1200234D94 /* ThreeController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5748200418505B1200234D94 /* ThreeController.cpp */; };
 		5765D8EF18112B190032D0F1 /* InitializeController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5765D8ED18112B190032D0F1 /* InitializeController.cpp */; };
-		576D0255186993F700766C13 /* Builder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 576D023D186993F700766C13 /* Builder.cpp */; };
-		576D0256186993F700766C13 /* CCBBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 576D023F186993F700766C13 /* CCBBuilder.cpp */; };
-		576D0257186993F700766C13 /* YHBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 576D0241186993F700766C13 /* YHBuilder.cpp */; };
-		576D0258186993F700766C13 /* ControllerDirector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 576D0244186993F700766C13 /* ControllerDirector.cpp */; };
-		576D0259186993F700766C13 /* NavigateController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 576D0246186993F700766C13 /* NavigateController.cpp */; };
-		576D025A186993F700766C13 /* Layer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 576D0249186993F700766C13 /* Layer.cpp */; };
-		576D025B186993F700766C13 /* LayerController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 576D024B186993F700766C13 /* LayerController.cpp */; };
-		576D025C186993F700766C13 /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 576D024D186993F700766C13 /* Scene.cpp */; };
-		576D025D186993F700766C13 /* SceneDirector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 576D024F186993F700766C13 /* SceneDirector.cpp */; };
-		576D025E186993F700766C13 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 576D0251186993F700766C13 /* Window.cpp */; };
+		57704F1718C9AAEE006B8A62 /* libyhmvc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57704F1618C9AADD006B8A62 /* libyhmvc.a */; };
+		57704F1818C9AAF1006B8A62 /* libyhgui.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57704F1018C9AAD5006B8A62 /* libyhgui.a */; };
+		57704F1918C9AAF4006B8A62 /* libyhge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57704F0A18C9AAC9006B8A62 /* libyhge.a */; };
 		5797A5BF180E917100BA5455 /* HelloLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5797A5BD180E917100BA5455 /* HelloLayer.cpp */; };
 		57EA398F1823A10B001A0E96 /* ShopController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57EA398D1823A10B001A0E96 /* ShopController.cpp */; };
 		7855E0E1153FEF240059DD9A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7855E0DF153FEF240059DD9A /* Default.png */; };
@@ -134,12 +127,26 @@
 			remoteGlobalIDString = 1551A33F158F2AB200E66CFE;
 			remoteInfo = cocos2dx;
 		};
-		15A3DA681682F881002FB0C5 /* PBXContainerItemProxy */ = {
+		57704F0918C9AAC9006B8A62 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 15A3D87E1682F7B3002FB0C5 /* cocos2dx.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 1551A33E158F2AB200E66CFE;
-			remoteInfo = cocos2dx;
+			containerPortal = 57704F0518C9AAC7006B8A62 /* yhge.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 578E5F5318680D830042319C;
+			remoteInfo = yhge;
+		};
+		57704F0F18C9AAD5006B8A62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57704F0B18C9AAD4006B8A62 /* yhgui.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 57B26176186818A200EFF1FD;
+			remoteInfo = yhgui;
+		};
+		57704F1518C9AADD006B8A62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57704F1118C9AADC006B8A62 /* yhmvc.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 57C664731867EBE600018691;
+			remoteInfo = yhmvc;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -334,28 +341,9 @@
 		5748200518505B1200234D94 /* ThreeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeController.h; sourceTree = "<group>"; };
 		5765D8ED18112B190032D0F1 /* InitializeController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InitializeController.cpp; sourceTree = "<group>"; };
 		5765D8EE18112B190032D0F1 /* InitializeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitializeController.h; sourceTree = "<group>"; };
-		576D023D186993F700766C13 /* Builder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Builder.cpp; sourceTree = "<group>"; };
-		576D023E186993F700766C13 /* Builder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Builder.h; sourceTree = "<group>"; };
-		576D023F186993F700766C13 /* CCBBuilder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCBBuilder.cpp; sourceTree = "<group>"; };
-		576D0240186993F700766C13 /* CCBBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBBuilder.h; sourceTree = "<group>"; };
-		576D0241186993F700766C13 /* YHBuilder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = YHBuilder.cpp; sourceTree = "<group>"; };
-		576D0242186993F700766C13 /* YHBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHBuilder.h; sourceTree = "<group>"; };
-		576D0244186993F700766C13 /* ControllerDirector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ControllerDirector.cpp; sourceTree = "<group>"; };
-		576D0245186993F700766C13 /* ControllerDirector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerDirector.h; sourceTree = "<group>"; };
-		576D0246186993F700766C13 /* NavigateController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NavigateController.cpp; sourceTree = "<group>"; };
-		576D0247186993F700766C13 /* NavigateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigateController.h; sourceTree = "<group>"; };
-		576D0249186993F700766C13 /* Layer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Layer.cpp; sourceTree = "<group>"; };
-		576D024A186993F700766C13 /* Layer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Layer.h; sourceTree = "<group>"; };
-		576D024B186993F700766C13 /* LayerController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LayerController.cpp; sourceTree = "<group>"; };
-		576D024C186993F700766C13 /* LayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerController.h; sourceTree = "<group>"; };
-		576D024D186993F700766C13 /* Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scene.cpp; sourceTree = "<group>"; };
-		576D024E186993F700766C13 /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
-		576D024F186993F700766C13 /* SceneDirector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneDirector.cpp; sourceTree = "<group>"; };
-		576D0250186993F700766C13 /* SceneDirector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDirector.h; sourceTree = "<group>"; };
-		576D0251186993F700766C13 /* Window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Window.cpp; sourceTree = "<group>"; };
-		576D0252186993F700766C13 /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
-		576D0253186993F700766C13 /* yhmvc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yhmvc.h; sourceTree = "<group>"; };
-		576D0254186993F700766C13 /* YHMVCMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHMVCMacros.h; sourceTree = "<group>"; };
+		57704F0518C9AAC7006B8A62 /* yhge.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = yhge.xcodeproj; path = ../../yhge/proj.ios/yhge.xcodeproj; sourceTree = "<group>"; };
+		57704F0B18C9AAD4006B8A62 /* yhgui.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = yhgui.xcodeproj; path = ../../yhgui/proj.ios/yhgui.xcodeproj; sourceTree = "<group>"; };
+		57704F1118C9AADC006B8A62 /* yhmvc.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = yhmvc.xcodeproj; path = ../../yhmvc/proj.ios/yhmvc.xcodeproj; sourceTree = "<group>"; };
 		5797A5BD180E917100BA5455 /* HelloLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloLayer.cpp; sourceTree = "<group>"; };
 		5797A5BE180E917100BA5455 /* HelloLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloLayer.h; sourceTree = "<group>"; };
 		57EA398C1823958E001A0E96 /* SceneRegisterData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneRegisterData.h; sourceTree = "<group>"; };
@@ -383,6 +371,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57704F1918C9AAF4006B8A62 /* libyhge.a in Frameworks */,
+				57704F1818C9AAF1006B8A62 /* libyhgui.a in Frameworks */,
+				57704F1718C9AAEE006B8A62 /* libyhmvc.a in Frameworks */,
 				15A3DA6A1682F886002FB0C5 /* libcocos2dx.a in Frameworks */,
 				1ACB3244164770DE00914215 /* libcurl.a in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
@@ -689,7 +680,9 @@
 			isa = PBXGroup;
 			children = (
 				15A3D87E1682F7B3002FB0C5 /* cocos2dx.xcodeproj */,
-				576D023B186993F700766C13 /* yhmvc */,
+				57704F0518C9AAC7006B8A62 /* yhge.xcodeproj */,
+				57704F0B18C9AAD4006B8A62 /* yhgui.xcodeproj */,
+				57704F1118C9AADC006B8A62 /* yhmvc.xcodeproj */,
 				15AA9C4015B7EC450033D6C2 /* Classes */,
 				15A3DA6B1682F8A6002FB0C5 /* CocosDenshion */,
 				15A3D9B31682F826002FB0C5 /* extensions */,
@@ -719,58 +712,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		576D023B186993F700766C13 /* yhmvc */ = {
+		57704F0618C9AAC7006B8A62 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				576D023C186993F700766C13 /* Builders */,
-				576D0243186993F700766C13 /* Controllers */,
-				576D0248186993F700766C13 /* Core */,
-				576D0253186993F700766C13 /* yhmvc.h */,
-				576D0254186993F700766C13 /* YHMVCMacros.h */,
+				57704F0A18C9AAC9006B8A62 /* libyhge.a */,
 			);
-			name = yhmvc;
-			path = ../yhmvc/yhmvc;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		576D023C186993F700766C13 /* Builders */ = {
+		57704F0C18C9AAD4006B8A62 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				576D023D186993F700766C13 /* Builder.cpp */,
-				576D023E186993F700766C13 /* Builder.h */,
-				576D023F186993F700766C13 /* CCBBuilder.cpp */,
-				576D0240186993F700766C13 /* CCBBuilder.h */,
-				576D0241186993F700766C13 /* YHBuilder.cpp */,
-				576D0242186993F700766C13 /* YHBuilder.h */,
+				57704F1018C9AAD5006B8A62 /* libyhgui.a */,
 			);
-			path = Builders;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		576D0243186993F700766C13 /* Controllers */ = {
+		57704F1218C9AADC006B8A62 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				576D0244186993F700766C13 /* ControllerDirector.cpp */,
-				576D0245186993F700766C13 /* ControllerDirector.h */,
-				576D0246186993F700766C13 /* NavigateController.cpp */,
-				576D0247186993F700766C13 /* NavigateController.h */,
+				57704F1618C9AADD006B8A62 /* libyhmvc.a */,
 			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		576D0248186993F700766C13 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				576D0249186993F700766C13 /* Layer.cpp */,
-				576D024A186993F700766C13 /* Layer.h */,
-				576D024B186993F700766C13 /* LayerController.cpp */,
-				576D024C186993F700766C13 /* LayerController.h */,
-				576D024D186993F700766C13 /* Scene.cpp */,
-				576D024E186993F700766C13 /* Scene.h */,
-				576D024F186993F700766C13 /* SceneDirector.cpp */,
-				576D0250186993F700766C13 /* SceneDirector.h */,
-				576D0251186993F700766C13 /* Window.cpp */,
-				576D0252186993F700766C13 /* Window.h */,
-			);
-			path = Core;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		5797A5B1180E8DBD00BA5455 /* Controllers */ = {
@@ -887,6 +850,18 @@
 					ProductGroup = 15A3D87F1682F7B3002FB0C5 /* Products */;
 					ProjectRef = 15A3D87E1682F7B3002FB0C5 /* cocos2dx.xcodeproj */;
 				},
+				{
+					ProductGroup = 57704F0618C9AAC7006B8A62 /* Products */;
+					ProjectRef = 57704F0518C9AAC7006B8A62 /* yhge.xcodeproj */;
+				},
+				{
+					ProductGroup = 57704F0C18C9AAD4006B8A62 /* Products */;
+					ProjectRef = 57704F0B18C9AAD4006B8A62 /* yhgui.xcodeproj */;
+				},
+				{
+					ProductGroup = 57704F1218C9AADC006B8A62 /* Products */;
+					ProjectRef = 57704F1118C9AADC006B8A62 /* yhmvc.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -901,6 +876,27 @@
 			fileType = archive.ar;
 			path = libcocos2dx.a;
 			remoteRef = 15A3D8851682F7B3002FB0C5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		57704F0A18C9AAC9006B8A62 /* libyhge.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libyhge.a;
+			remoteRef = 57704F0918C9AAC9006B8A62 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		57704F1018C9AAD5006B8A62 /* libyhgui.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libyhgui.a;
+			remoteRef = 57704F0F18C9AAD5006B8A62 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		57704F1618C9AADD006B8A62 /* libyhmvc.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libyhmvc.a;
+			remoteRef = 57704F1518C9AADD006B8A62 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -971,25 +967,20 @@
 				15A3DA521682F826002FB0C5 /* CCControlUtils.cpp in Sources */,
 				15A3DA531682F826002FB0C5 /* CCInvocation.cpp in Sources */,
 				15A3DA541682F826002FB0C5 /* CCScale9Sprite.cpp in Sources */,
-				576D025E186993F700766C13 /* Window.cpp in Sources */,
 				15A3DA551682F826002FB0C5 /* CCEditBox.cpp in Sources */,
 				15A3DA571682F826002FB0C5 /* CCEditBoxImplIOS.mm in Sources */,
 				15A3DA591682F826002FB0C5 /* CCScrollView.cpp in Sources */,
 				15A3DA5A1682F826002FB0C5 /* CCSorting.cpp in Sources */,
 				15A3DA5B1682F826002FB0C5 /* CCTableView.cpp in Sources */,
 				574619E318238B2400B44F4F /* Game.cpp in Sources */,
-				576D025A186993F700766C13 /* Layer.cpp in Sources */,
 				15A3DA5C1682F826002FB0C5 /* CCTableViewCell.cpp in Sources */,
 				15A3DA5D1682F826002FB0C5 /* HttpClient.cpp in Sources */,
-				576D0255186993F700766C13 /* Builder.cpp in Sources */,
 				15A3DAEB1682F8A6002FB0C5 /* CDAudioManager.m in Sources */,
 				15A3DAEC1682F8A6002FB0C5 /* CDOpenALSupport.m in Sources */,
 				15A3DAED1682F8A6002FB0C5 /* CocosDenshion.m in Sources */,
 				15A3DAEE1682F8A6002FB0C5 /* SimpleAudioEngine.mm in Sources */,
 				5765D8EF18112B190032D0F1 /* InitializeController.cpp in Sources */,
 				57EA398F1823A10B001A0E96 /* ShopController.cpp in Sources */,
-				576D0259186993F700766C13 /* NavigateController.cpp in Sources */,
-				576D025D186993F700766C13 /* SceneDirector.cpp in Sources */,
 				15A3DAEF1682F8A6002FB0C5 /* SimpleAudioEngine_objc.m in Sources */,
 				1A27573F1697CF2B00504026 /* CCEditBoxImplAndroid.cpp in Sources */,
 				1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */,
@@ -1004,12 +995,9 @@
 				1A40E7221727BF49006D4861 /* Atlas.cpp in Sources */,
 				574619DA18237D7200B44F4F /* MainController.cpp in Sources */,
 				1A40E7231727BF49006D4861 /* AtlasAttachmentLoader.cpp in Sources */,
-				576D0257186993F700766C13 /* YHBuilder.cpp in Sources */,
 				1A40E7241727BF49006D4861 /* Attachment.cpp in Sources */,
 				1A40E7251727BF49006D4861 /* AttachmentLoader.cpp in Sources */,
-				576D0258186993F700766C13 /* ControllerDirector.cpp in Sources */,
 				1A40E7261727BF49006D4861 /* Bone.cpp in Sources */,
-				576D025B186993F700766C13 /* LayerController.cpp in Sources */,
 				1A40E7271727BF49006D4861 /* BoneData.cpp in Sources */,
 				1A40E7281727BF49006D4861 /* extension.cpp in Sources */,
 				1A40E7291727BF49006D4861 /* Json.cpp in Sources */,
@@ -1019,8 +1007,6 @@
 				1A40E72C1727BF49006D4861 /* SkeletonData.cpp in Sources */,
 				1A40E72D1727BF49006D4861 /* SkeletonJson.cpp in Sources */,
 				574619E71823919800B44F4F /* GameSceneDirector.cpp in Sources */,
-				576D025C186993F700766C13 /* Scene.cpp in Sources */,
-				576D0256186993F700766C13 /* CCBBuilder.cpp in Sources */,
 				1A40E72E1727BF49006D4861 /* Skin.cpp in Sources */,
 				1A40E72F1727BF49006D4861 /* Slot.cpp in Sources */,
 				1A40E7301727BF49006D4861 /* SlotData.cpp in Sources */,
@@ -1034,7 +1020,6 @@
 		15A3DA691682F881002FB0C5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = cocos2dx;
-			targetProxy = 15A3DA681682F881002FB0C5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1067,7 +1052,9 @@
 					"$(SRCROOT)/../../../cocos2dx/platform/third_party/ios",
 					"$(SRCROOT)/../../../cocos2dx/platform/ios",
 					"$(SRCROOT)/../../../cocos2dx/platform/ios/Simulation",
-					../yhmvc,
+					"$(SRCROOT)/../../yhge",
+					"$(SRCROOT)/../../yhgui",
+					"$(SRCROOT)/../../yhmvc",
 					../Classes,
 					../,
 				);
@@ -1111,7 +1098,9 @@
 					"$(SRCROOT)/../../../cocos2dx/platform/third_party/ios",
 					"$(SRCROOT)/../../../cocos2dx/platform/ios",
 					"$(SRCROOT)/../../../cocos2dx/platform/ios/Simulation",
-					../yhmvc,
+					"$(SRCROOT)/../../yhge",
+					"$(SRCROOT)/../../yhgui",
+					"$(SRCROOT)/../../yhmvc",
 					../Classes,
 					../,
 				);

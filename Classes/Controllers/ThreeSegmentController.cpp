@@ -1,5 +1,4 @@
 #include "ThreeSegmentController.h"
-#include "yhmvc/Core/Layer.h"
 #include "Scenes/GameSceneDirector.h"
 
 USING_NS_CC;
@@ -21,7 +20,7 @@ ThreeSegmentController::~ThreeSegmentController(void)
     
 }
 
-void ThreeSegmentController::layerDidLoad()
+void ThreeSegmentController::viewDidLoad()
 {
     CCSize screenSize=CCDirector::sharedDirector()->getWinSize();
     
@@ -30,19 +29,19 @@ void ThreeSegmentController::layerDidLoad()
     float bodyHeight=screenSize.height-headerHeight-footerHeight;
     
     //create three layer
-    m_headerLayer=yhmvc::Layer::create();
+    m_headerLayer=yhmvc::View::create();
     m_headerLayer->setContentSize(CCSizeMake(screenSize.width, headerHeight));
     m_headerLayer->setPosition(ccp(0.0f, screenSize.height-headerHeight));
-    m_layer->addChild(m_headerLayer);
+    m_view->addChild(m_headerLayer);
     
-    m_footerLayer=yhmvc::Layer::create();
+    m_footerLayer=yhmvc::View::create();
     m_footerLayer->setContentSize(CCSizeMake(screenSize.width,footerHeight));
-    m_layer->addChild(m_footerLayer);
+    m_view->addChild(m_footerLayer);
     
-    m_bodyLayer=yhmvc::Layer::create();
+    m_bodyLayer=yhmvc::View::create();
     m_bodyLayer->setContentSize(CCSizeMake(screenSize.width, bodyHeight));
     m_bodyLayer->setPosition(ccp(0.0f, footerHeight));
-    m_layer->addChild(m_bodyLayer);
+    m_view->addChild(m_bodyLayer);
 }
 
 NS_MYGAME_END

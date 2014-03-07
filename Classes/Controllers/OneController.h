@@ -1,8 +1,7 @@
 #ifndef __HELLOWORLD_OneController_H__
 #define __HELLOWORLD_OneController_H__
 
-#include "yhmvc/Core/LayerController.h"
-#include "yhmvc/Core/Layer.h"
+#include <yhmvc/yhmvc.h>
 #include "GameMacros.h"
 
 NS_MYGAME_BEGIN
@@ -13,7 +12,7 @@ NS_MYGAME_BEGIN
  * 可以添加其它controller来作为显示内容
  * 由于结构简单不容易出错。
  */
-class OneController:public cocos2d::yhmvc::LayerController
+class OneController:public cocos2d::yhmvc::Controller
 {
 public:
 	
@@ -21,7 +20,7 @@ public:
     
 	~OneController(void);
 
-	void layerDidLoad();
+	void viewDidLoad();
 
 	void backCallback(cocos2d::CCObject* pSender);
     

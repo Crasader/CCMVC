@@ -1,5 +1,4 @@
 #include "ShopController.h"
-#include "yhmvc/Core/Layer.h"
 #include "Scenes/GameSceneDirector.h"
 
 USING_NS_CC;
@@ -18,7 +17,7 @@ ShopController::~ShopController(void)
     CCLOG("ShopController destroy");
 }
 
-void ShopController::layerDidLoad()
+void ShopController::viewDidLoad()
 {
     
     CCSize screenSize=CCDirector::sharedDirector()->getWinSize();
@@ -31,7 +30,7 @@ void ShopController::layerDidLoad()
     CCMenu* menu=CCMenu::create(startGameItem, NULL);
     menu->setPosition( CCPointZero );
     
-    m_layer->addChild(menu);
+    m_view->addChild(menu);
 
 }
 

@@ -1,12 +1,11 @@
 #ifndef __HELLOWORLD_FooterController_H__
 #define __HELLOWORLD_FooterController_H__
 
-#include "yhmvc/Core/LayerController.h"
-#include "yhmvc/Core/Layer.h"
+#include <yhmvc/yhmvc.h>
 #include "GameMacros.h"
 
 NS_MYGAME_BEGIN
-class FooterController:public cocos2d::yhmvc::LayerController
+class FooterController:public cocos2d::yhmvc::Controller
 {
 public:
 	
@@ -14,7 +13,7 @@ public:
     
 	~FooterController(void);
 
-	void layerDidLoad();
+	void viewDidLoad();
 
 	void homeCallback(cocos2d::CCObject* pSender);
     

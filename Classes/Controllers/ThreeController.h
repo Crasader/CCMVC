@@ -7,7 +7,7 @@ NS_MYGAME_BEGIN
 
 /**
  * 直接继承结构化控制器。
- * 容易引起误用。父类的m_layer是结构化控制器其它layer的容器。当前类中不能使用m_layer。
+ * 容易引起误用。父类的m_view是结构化控制器其它layer的容器。当前类中不能使用m_view。
  */
 class ThreeController:public ThreeSegmentController2
 {
@@ -17,7 +17,7 @@ public:
     
 	~ThreeController(void);
 
-	void layerDidLoad();
+	void viewDidLoad();
 
 	void backCallback(cocos2d::CCObject* pSender);
     

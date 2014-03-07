@@ -1,5 +1,5 @@
 #include "TwoController.h"
-#include "yhmvc/Core/Layer.h"
+#include "yhmvc/Core/View.h"
 #include "Scenes/GameSceneDirector.h"
 #include "ThreeSegmentController.h"
 #include "HeaderController.h"
@@ -21,29 +21,29 @@ TwoController::~TwoController(void)
     CCLOG("TwoController destroy");
 }
 
-void TwoController::layerDidLoad()
+void TwoController::viewDidLoad()
 {
     ThreeSegmentController* threeSegmentController=new ThreeSegmentController();
     threeSegmentController->init();
-    this->addChildLayerController(threeSegmentController);
+    this->addChildController(threeSegmentController);
     threeSegmentController->release();
     
-    m_layer->addChild(threeSegmentController->getLayer());
+    m_view->addChild(threeSegmentController->getView());
     
     
     HeaderController* headerController=new HeaderController();
     headerController->init();
-    this->addChildLayerController(headerController);
+    this->addChildController(headerController);
     headerController->release();
     headerController->setPreferredContentSize(threeSegmentController->getHeaderLayer()->getContentSize());
-    threeSegmentController->getHeaderLayer()->addChild(headerController->getLayer());
+    threeSegmentController->getHeaderLayer()->addChild(headerController->getView());
     
     FooterController* footerController=new FooterController();
     footerController->init();
-    this->addChildLayerController(footerController);
+    this->addChildController(footerController);
     footerController->release();
     footerController->setPreferredContentSize(threeSegmentController->getFooterLayer()->getContentSize());
-    threeSegmentController->getFooterLayer()->addChild(footerController->getLayer());
+    threeSegmentController->getFooterLayer()->addChild(footerController->getView());
     
     
     CCSize contentSize=threeSegmentController->getBodyLayer()->getContentSize();

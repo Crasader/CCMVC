@@ -1,5 +1,4 @@
 #include "OneController.h"
-#include "yhmvc/Core/Layer.h"
 #include "Scenes/GameSceneDirector.h"
 #include "HeaderController.h"
 #include "FooterController.h"
@@ -20,7 +19,7 @@ OneController::~OneController(void)
     CCLOG("OneController destroy");
 }
 
-void OneController::layerDidLoad()
+void OneController::viewDidLoad()
 {
     CCSize screenSize=CCDirector::sharedDirector()->getWinSize();
     
@@ -31,26 +30,26 @@ void OneController::layerDidLoad()
     //create header
     HeaderController* headerController=new HeaderController();
     headerController->init();
-    this->addChildLayerController(headerController);
+    this->addChildController(headerController);
     headerController->release();
     headerController->setPreferredContentSize(CCSizeMake(screenSize.width, headerHeight));
-    m_layer->addChild(headerController->getLayer());
-    headerController->getLayer()->setPosition(ccp(0.0f, screenSize.height-headerHeight));
+    m_view->addChild(headerController->getView());
+    headerController->getView()->setPosition(ccp(0.0f, screenSize.height-headerHeight));
     
     
     //create footer
     FooterController* footerController=new FooterController();
     footerController->init();
-    this->addChildLayerController(footerController);
+    this->addChildController(footerController);
     footerController->release();
     footerController->setPreferredContentSize(CCSizeMake(screenSize.width,footerHeight));
-    m_layer->addChild(footerController->getLayer());
+    m_view->addChild(footerController->getView());
     
     //create body
-    yhmvc::Layer* bodyLayer=yhmvc::Layer::create();
+    yhmvc::View* bodyLayer=yhmvc::View::create();
     bodyLayer->setContentSize(CCSizeMake(screenSize.width, bodyHeight));
     bodyLayer->setPosition(ccp(0.0f, footerHeight));
-    m_layer->addChild(bodyLayer);
+    m_view->addChild(bodyLayer);
     
     
     CCSize contentSize=CCSizeMake(screenSize.width, bodyHeight);

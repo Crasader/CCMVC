@@ -1,12 +1,11 @@
 #ifndef __HELLOWORLD_ThreeSegmentController2_H__
 #define __HELLOWORLD_ThreeSegmentController2_H__
 
-#include "yhmvc/Core/LayerController.h"
-#include "yhmvc/Core/Layer.h"
+#include <yhmvc/yhmvc.h>
 #include "GameMacros.h"
 
 NS_MYGAME_BEGIN
-class ThreeSegmentController2:public cocos2d::yhmvc::LayerController
+class ThreeSegmentController2:public cocos2d::yhmvc::Controller
 {
 public:
 	
@@ -14,30 +13,30 @@ public:
     
 	~ThreeSegmentController2(void);
 
-	void layerDidLoad();    
+	void viewDidLoad();    
     
     //get setter
     
-    inline yhmvc::Layer* getHeaderLayer()
+    inline yhmvc::View* getHeaderLayer()
     {
         return m_headerLayer;
     }
     
-    inline yhmvc::Layer* getFooterLayer()
+    inline yhmvc::View* getFooterLayer()
     {
         return m_footerLayer;
     }
     
-    inline yhmvc::Layer* getBodyLayer()
+    inline yhmvc::View* getBodyLayer()
     {
         return m_bodyLayer;
     }
     
 protected:
     
-    yhmvc::Layer* m_headerLayer;
-    yhmvc::Layer* m_footerLayer;
-    yhmvc::Layer* m_bodyLayer;
+    yhmvc::View* m_headerLayer;
+    yhmvc::View* m_footerLayer;
+    yhmvc::View* m_bodyLayer;
 };
 
 NS_MYGAME_END

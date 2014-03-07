@@ -1,13 +1,12 @@
 #ifndef __HELLOWORLD_MainController_H__
 #define __HELLOWORLD_MainController_H__
 
-#include "yhmvc/Core/LayerController.h"
-#include "yhmvc/Core/Layer.h"
+#include <yhmvc/yhmvc.h>
 #include "GameMacros.h"
 
 NS_MYGAME_BEGIN
 
-class MainController:public cocos2d::yhmvc::LayerController
+class MainController:public cocos2d::yhmvc::Controller
 {
 public:
 	MainController(void);
