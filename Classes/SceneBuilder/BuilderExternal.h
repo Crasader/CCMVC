@@ -58,7 +58,7 @@ class BaseControllerCreator:public yhmvc::ControllerCreator
 {
 public:
     
-    virtual CCNode * createElement(const yhge::Json::Value& defineData,yhgui::UIBuilder* builder,CCNode* parent);
+    //virtual CCNode * createElement(const yhge::Json::Value& defineData,yhgui::UIBuilder* builder,CCNode* parent);
     
     YHMVC_BUILDER_CREATE_CONTROLLER(BaseController);
     
@@ -66,7 +66,9 @@ public:
     
 protected:
     
-    virtual yhmvc::View* loadView(BaseController* controller,const yhge::Json::Value& defineData,CCNode* parent,yhgui::UIBuilder* builder);
+    //virtual yhmvc::View* loadView(BaseController* controller,const yhge::Json::Value& defineData,CCNode* parent,yhgui::UIBuilder* builder);
+    //由于ControllerCreator使用的是Controller这里不能使用BaseController,否则虚数就没有效果
+    virtual yhmvc::View* loadView(yhmvc::Controller* controller,const yhge::Json::Value& defineData,CCNode* parent,yhgui::UIBuilder* builder);
 };
 
 /**

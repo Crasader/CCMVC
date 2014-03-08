@@ -5,6 +5,8 @@
 		"type":"OneController",
 		"properties":{
 			"name":"root",
+            "preferredContentWidth":960,
+            "preferredContentHeight":640,
 			"view":{
 				"type":"MvcView",
 				"children":[
@@ -14,7 +16,7 @@
 						"properties":{
 							"text":"hello",
 							"x":100,
-							"y":0,
+							"y":30,
 							"fontFamily":"Marker Felt.ttf",
 							"fontSize":22
 						}
@@ -31,9 +33,9 @@
 									{
 										"type":"CCLabelTTF",
 										"properties":{
-											"text":"hello",
-											"x":100,
-											"y":0,
+											"text":"world",
+											"x":200,
+											"y":40,
 											"fontFamily":"Marker Felt.ttf",
 											"fontSize":22
 										}

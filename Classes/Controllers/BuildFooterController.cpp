@@ -16,7 +16,7 @@ BuildFooterController::BuildFooterController(void)
 
 BuildFooterController::~BuildFooterController(void)
 {
-    
+    CCLOG("BuildFooterController destroy");
 }
 
 void BuildFooterController::onBack(yhge::Event* event)

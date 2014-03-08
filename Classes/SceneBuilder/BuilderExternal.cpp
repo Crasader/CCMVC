@@ -33,24 +33,21 @@ void BaseSceneParser::setupPropertyParser()
     registerPropertyParser(kElementPropertyController, BaseSceneControllerPropertyParser::create());
 }
 
-CCNode * BaseControllerCreator::createElement(const yhge::Json::Value& defineData,yhgui::UIBuilder* builder,CCNode* parent)
-{
-    return loadView(createController(), defineData, parent, builder);
-}
-
 yhmvc::View*
 BaseControllerCreator::loadView(
-                            BaseController* controller,
+                            yhmvc::Controller* controller,
                             const yhge::Json::Value& defineData,
                             CCNode* parent,yhgui::UIBuilder* builder)
 {
+    BaseController* baseController=static_cast<BaseController*>(controller);
+
     //替换事件处理
     yhgui::ElementEventParser* elementEventParser=builder->getElementEventParser();
     elementEventParser->retain();
     
-    builder->setElementEventParser(controller->createEventParser());
+    builder->setElementEventParser(baseController->createEventParser());
     
-    yhmvc::View* view=ControllerCreator::loadView(controller, defineData, parent, builder);
+    yhmvc::View* view=ControllerCreator::loadView(baseController, defineData, parent, builder);
     
     builder->setElementEventParser(elementEventParser);
     elementEventParser->release();

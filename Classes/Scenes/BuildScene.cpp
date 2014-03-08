@@ -20,6 +20,7 @@ void BuildScene::loadContents()
     this->addChild(document);
     
     BuildController* buildController=new BuildController();
+    buildController->init();
     
     buildController->setViewFile("ui/TestScene.json");
     
