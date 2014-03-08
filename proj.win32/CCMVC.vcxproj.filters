@@ -16,17 +16,8 @@
     <Filter Include="Classes\Scenes">
       <UniqueIdentifier>{71a32c1c-91fa-440b-a39b-df262a1bc492}</UniqueIdentifier>
     </Filter>
-    <Filter Include="yhmvc">
-      <UniqueIdentifier>{3677892a-188c-4bee-81e5-fd1e650b37d6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="yhmvc\Builders">
-      <UniqueIdentifier>{fa7b05b0-6c7f-40a3-9322-3efc2e4c3bf8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="yhmvc\Controllers">
-      <UniqueIdentifier>{61681ef8-4007-4c0f-b65e-1e18d63e3c42}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="yhmvc\Core">
-      <UniqueIdentifier>{2ce3620e-157a-43ab-9043-e46e5d7c09e5}</UniqueIdentifier>
+    <Filter Include="Classes\SceneBuilder">
+      <UniqueIdentifier>{840ef637-878c-4217-98a9-c791fe4985e7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -42,35 +33,20 @@
     <ClCompile Include="..\Classes\Game.cpp">
       <Filter>Classes</Filter>
     </ClCompile>
-    <ClCompile Include="..\yhmvc\yhmvc\Builders\Builder.cpp">
-      <Filter>yhmvc\Builders</Filter>
+    <ClCompile Include="..\Classes\Controllers\BaseController.cpp">
+      <Filter>Classes\Controllers</Filter>
     </ClCompile>
-    <ClCompile Include="..\yhmvc\yhmvc\Builders\CCBBuilder.cpp">
-      <Filter>yhmvc\Builders</Filter>
+    <ClCompile Include="..\Classes\Controllers\BuildController.cpp">
+      <Filter>Classes\Controllers</Filter>
     </ClCompile>
-    <ClCompile Include="..\yhmvc\yhmvc\Builders\YHBuilder.cpp">
-      <Filter>yhmvc\Builders</Filter>
+    <ClCompile Include="..\Classes\Controllers\BuildFooterController.cpp">
+      <Filter>Classes\Controllers</Filter>
     </ClCompile>
-    <ClCompile Include="..\yhmvc\yhmvc\Controllers\ControllerDirector.cpp">
-      <Filter>yhmvc\Controllers</Filter>
+    <ClCompile Include="..\Classes\Controllers\BuildHeaderController.cpp">
+      <Filter>Classes\Controllers</Filter>
     </ClCompile>
-    <ClCompile Include="..\yhmvc\yhmvc\Controllers\NavigateController.cpp">
-      <Filter>yhmvc\Controllers</Filter>
-    </ClCompile>
-    <ClCompile Include="..\yhmvc\yhmvc\Core\Layer.cpp">
-      <Filter>yhmvc\Core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\yhmvc\yhmvc\Core\LayerController.cpp">
-      <Filter>yhmvc\Core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\yhmvc\yhmvc\Core\Scene.cpp">
-      <Filter>yhmvc\Core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\yhmvc\yhmvc\Core\SceneDirector.cpp">
-      <Filter>yhmvc\Core</Filter>
-    </ClCompile>
-    <ClCompile Include="..\yhmvc\yhmvc\Core\Window.cpp">
-      <Filter>yhmvc\Core</Filter>
+    <ClCompile Include="..\Classes\Controllers\BuildMainController.cpp">
+      <Filter>Classes\Controllers</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\Controllers\FooterController.cpp">
       <Filter>Classes\Controllers</Filter>
@@ -102,7 +78,19 @@
     <ClCompile Include="..\Classes\Controllers\TwoController.cpp">
       <Filter>Classes\Controllers</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\SceneBuilder\BuilderExternal.cpp">
+      <Filter>Classes\SceneBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SceneBuilder\GameSceneBuilder.cpp">
+      <Filter>Classes\SceneBuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\AutoBuildScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
     <ClCompile Include="..\Classes\Scenes\BaseScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\BuildScene.cpp">
       <Filter>Classes\Scenes</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\Scenes\GameSceneDirector.cpp">
@@ -149,41 +137,20 @@
     <ClInclude Include="..\Classes\GameMacros.h">
       <Filter>Classes</Filter>
     </ClInclude>
-    <ClInclude Include="..\yhmvc\yhmvc\Builders\Builder.h">
-      <Filter>yhmvc\Builders</Filter>
+    <ClInclude Include="..\Classes\Controllers\BaseController.h">
+      <Filter>Classes\Controllers</Filter>
     </ClInclude>
-    <ClInclude Include="..\yhmvc\yhmvc\Builders\CCBBuilder.h">
-      <Filter>yhmvc\Builders</Filter>
+    <ClInclude Include="..\Classes\Controllers\BuildController.h">
+      <Filter>Classes\Controllers</Filter>
     </ClInclude>
-    <ClInclude Include="..\yhmvc\yhmvc\Builders\YHBuilder.h">
-      <Filter>yhmvc\Builders</Filter>
+    <ClInclude Include="..\Classes\Controllers\BuildFooterController.h">
+      <Filter>Classes\Controllers</Filter>
     </ClInclude>
-    <ClInclude Include="..\yhmvc\yhmvc\Controllers\ControllerDirector.h">
-      <Filter>yhmvc\Controllers</Filter>
+    <ClInclude Include="..\Classes\Controllers\BuildHeaderController.h">
+      <Filter>Classes\Controllers</Filter>
     </ClInclude>
-    <ClInclude Include="..\yhmvc\yhmvc\Controllers\NavigateController.h">
-      <Filter>yhmvc\Controllers</Filter>
-    </ClInclude>
-    <ClInclude Include="..\yhmvc\yhmvc\Core\Layer.h">
-      <Filter>yhmvc\Core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\yhmvc\yhmvc\Core\LayerController.h">
-      <Filter>yhmvc\Core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\yhmvc\yhmvc\Core\Scene.h">
-      <Filter>yhmvc\Core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\yhmvc\yhmvc\Core\SceneDirector.h">
-      <Filter>yhmvc\Core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\yhmvc\yhmvc\Core\Window.h">
-      <Filter>yhmvc\Core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\yhmvc\yhmvc\yhmvc.h">
-      <Filter>yhmvc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\yhmvc\yhmvc\YHMVCMacros.h">
-      <Filter>yhmvc</Filter>
+    <ClInclude Include="..\Classes\Controllers\BuildMainController.h">
+      <Filter>Classes\Controllers</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Controllers\FooterController.h">
       <Filter>Classes\Controllers</Filter>
@@ -215,7 +182,22 @@
     <ClInclude Include="..\Classes\Controllers\TwoController.h">
       <Filter>Classes\Controllers</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\SceneBuilder\BuilderDefine.h">
+      <Filter>Classes\SceneBuilder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SceneBuilder\BuilderExternal.h">
+      <Filter>Classes\SceneBuilder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SceneBuilder\GameSceneBuilder.h">
+      <Filter>Classes\SceneBuilder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\AutoBuildScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
     <ClInclude Include="..\Classes\Scenes\BaseScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\BuildScene.h">
       <Filter>Classes\Scenes</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Scenes\GameSceneDirector.h">
