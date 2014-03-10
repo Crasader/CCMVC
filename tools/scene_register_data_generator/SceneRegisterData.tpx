@@ -1,0 +1,27 @@
+#ifndef CCMVC_SCENES_SCENEREGISTERDATA_H_
+#define CCMVC_SCENES_SCENEREGISTERDATA_H_
+
+#include <yhmvc/Controllers/ControllerDirector.h>
+#include "GameMacros.h"
+#include "SceneDefine.h"
+
+//this file generate by tools.do not modify directorly
+
+#{registerInclude}
+
+NS_MYGAME_BEGIN
+
+typedef struct SceneRegisterItem
+{
+    std::string name;
+    cocos2d::yhmvc::ControllerCreate createFun;
+} SceneRegisterItem;
+
+static SceneRegisterItem kSceneRegisterData[]=
+{
+#{registerData}
+};
+
+NS_MYGAME_END
+
+#endif //CCMVC_SCENES_SCENEREGISTERDATA_H_

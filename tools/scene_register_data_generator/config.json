@@ -1,0 +1,46 @@
+{	
+	"scenes":[
+		{
+			"name":"InitializeController",
+			"key":"kInitializeScene"
+		},
+		
+		{
+			"name":"MainController",
+			"key":"kMainScene"
+		},
+		
+		{
+			"name":"ShopController",
+			"key":"kShopScene"
+		},
+		
+		{
+			"name":"OneController",
+			"key":"kOneScene"
+		},
+		
+		{
+			"name":"TwoController",
+			"key":"kTwoScene"
+		},
+		
+		{
+			"name":"ThreeController",
+			"key":"kThreeScene"
+		},
+		
+		{
+			"name":"TestScene",
+			"path":"SceneBuilder/GameSceneBuilder.h",
+			"creator":"GameSceneBuilder::buildScene"
+		},
+		{
+			"name":"BuildOneScene",
+			"path":"SceneBuilder/GameSceneBuilder.h",
+			"creator":"GameSceneBuilder::buildScene"
+		}
+	]
+		
+	
+}

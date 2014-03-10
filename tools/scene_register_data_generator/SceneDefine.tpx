@@ -1,0 +1,10 @@
+#ifndef CCMVC_SCENES_SCENEDIFINE_H_
+#define CCMVC_SCENES_SCENEDIFINE_H_
+
+//this file generate by tool.do not modify derectely
+
+#{defineData}
+
+#pragma unused(#{unusedData})
+
+#endif //CCMVC_SCENES_SCENEDIFINE_H_
