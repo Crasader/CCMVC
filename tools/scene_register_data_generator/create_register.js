@@ -115,22 +115,30 @@ function parseConfigSceneItem(item){
 			objItem.name=item;
 			objItem.value=item;
 			objItem.key="k"+ucItem;
-			objItem.creator=ucItem+"::create";
-			objItem.path="Scenes/"+ucItem+".h";
+			objItem.creator=createCreatorFromName(ucItem);
+			objItem.path=createPathFromName(ucItem);
 			break;
 		case "object":
 			var ucItem=ucfirst(item.name);
 			objItem.name=item.name;
 			objItem.value=item.value?item.value:item.name;
 			objItem.key=item.key?item.key:("k"+ucItem);
-			objItem.creator=item.creator?item.creator:(ucItem+"::create");
-			objItem.path=item.path?item.path:("Scenes/"+ucItem);
+			objItem.creator=item.creator?item.creator:createCreatorFromName(ucItem);
+			objItem.path=item.path?item.path:createPathFromName(ucItem);
 			break;
 		default:
 		
 	}
 	
 	return objItem;
+}
+
+function createCreatorFromName(name){
+	return name+"::create";
+}
+
+function createPathFromName(name){
+	return "Scenes/"+name+".h";
 }
 
 function createDefineData(sceneItem,tpx){
