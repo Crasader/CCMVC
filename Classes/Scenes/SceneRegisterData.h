@@ -27,6 +27,7 @@ typedef struct SceneRegisterItem
 #include "Controllers/OneController.h"
 #include "Controllers/TwoController.h"
 #include "Controllers/ThreeController.h"
+#include "SceneBuilder/GameSceneBuilder.h"
 
 
 NS_MYGAME_BEGIN
@@ -38,7 +39,9 @@ static SceneRegisterItem kSceneRegisterData[]=
     {kShopScene,CONTROLLER_CREATE_SELECTOR(ShopController::create)},
     {kOneScene,CONTROLLER_CREATE_SELECTOR(OneController::create)},
     {kTwoScene,CONTROLLER_CREATE_SELECTOR(TwoController::create)},
-    {kThreeScene,CONTROLLER_CREATE_SELECTOR(ThreeController::create)}
+    {kThreeScene,CONTROLLER_CREATE_SELECTOR(ThreeController::create)},
+    {kTestScene,CONTROLLER_CREATE_SELECTOR(GameSceneBuilder::buildScene)},
+    {kBuildOneScene,CONTROLLER_CREATE_SELECTOR(GameSceneBuilder::buildScene)},
 };
 
 NS_MYGAME_END

@@ -16,6 +16,8 @@ public:
 	void viewDidLoad();
 
 	void showUserInfoCallback(cocos2d::CCObject* pSender);
+    
+    CREATE_FUNC(HeaderController);
 };
 NS_MYGAME_END
 

@@ -2,45 +2,76 @@
 	"version":1,
 	"formate":1,
 	"graphData":{
-		"type":"OneController",
+		"type":"TestController",
 		"properties":{
-			"name":"root"
-		},
-		"children":[
-			
-			{
-				"type":"CCLabelTTF",
-				"properties":{
-					"text":"hello",
-					"x":100,
-					"y":0,
-					"fontFamily":"Marker Felt.ttf",
-					"fontSize":22
-				}
-			},
-			{
+			"name":"root",
+			"view":{
 				
-				"type":"TwoController",
-				"properties":{
-					"name":"root",
-					"view":{
-						
-						"type":"MvcView",
-						"children":[
-							{
-								"type":"CCLabelTTF",
-								"properties":{
-									"text":"hello",
-									"x":100,
-									"y":0,
-									"fontFamily":"Marker Felt.ttf",
-									"fontSize":22
-								}
+				"type":"MvcView",
+				
+				"children":[
+					
+					{
+						"type":"CCLabelTTF",
+						"properties":{
+							"text":"hello",
+							"x":100,
+							"y":120,
+							"fontFamily":"Marker Felt.ttf",
+							"fontSize":22
+						}
+					},
+					
+					{
+				
+						"type":"HeaderController",
+						"properties":{
+							"name":"header",
+							"x":480,
+							"y":580,
+							"view":{
+								"type":"MvcView",
+								"children":[
+									{
+										"type":"CCLabelTTF",
+										"properties":{
+											"text":"header",
+											"x":100,
+											"y":20,
+											"fontFamily":"Marker Felt.ttf",
+											"fontSize":22
+										}
+									}
+								]
 							}
-						]
+						}
+					},
+					
+					{
+				
+						"type":"FooterController",
+						"properties":{
+							"name":"footer",
+							"view":{
+								"type":"MvcView",
+								"children":[
+									{
+										"type":"CCLabelTTF",
+										"properties":{
+											"text":"footer",
+											"x":400,
+											"y":20,
+											"fontFamily":"Marker Felt.ttf",
+											"fontSize":22
+										}
+									}
+								]
+							}
+						}
 					}
-				}
+				]
+				
 			}
-		]
+		}
 	}
 }

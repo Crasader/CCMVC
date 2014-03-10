@@ -17,6 +17,8 @@ static const char* kShopScene="shop";
 static const char* kOneScene="one";
 static const char* kTwoScene="two";
 static const char* kThreeScene="three";
+static const char* kTestScene="TestScene";
+static const char* kBuildOneScene="BuildOneScene";
 
 #pragma unused(kInitializeScene,kMainScene,kShopScene)
 

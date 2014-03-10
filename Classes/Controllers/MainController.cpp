@@ -77,12 +77,14 @@ void MainController::menuCloseCallback(CCObject* pSender)
 
 void MainController::menuRunCallback(CCObject* pSender)
 {
-    GameSceneDirector::getInstance()->pushScene(kShopScene);
+//    GameSceneDirector::getInstance()->pushScene(kShopScene);
+    GameSceneDirector::getInstance()->pushScene(kTestScene);
 }
 
 void MainController::menuStopCallback(CCObject* pSender)
 {
-    GameSceneDirector::getInstance()->pushScene(kOneScene);
+//    GameSceneDirector::getInstance()->pushScene(kOneScene);
+    GameSceneDirector::getInstance()->pushScene(kBuildOneScene);
 }
 
 void MainController::menuMoveToCallback(CCObject* pSender)

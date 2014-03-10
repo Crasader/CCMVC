@@ -20,6 +20,8 @@ public:
     void battleCallback(cocos2d::CCObject* pSender);
     
     void helpCallback(cocos2d::CCObject* pSender);
+    
+    CREATE_FUNC(FooterController);
 };
 NS_MYGAME_END
 

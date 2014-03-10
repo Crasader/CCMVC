@@ -2,7 +2,7 @@
 	"version":1,
 	"formate":1,
 	"graphData":{
-		"type":"OneController",
+		"type":"BuildOneController",
 		"properties":{
 			"name":"root",
 			"controllers":[
@@ -10,6 +10,8 @@
 					"type":"HeaderController",
 					"properties":{
 						"name":"header",
+						"x":400,
+						"y":580,
 						"viewFile":"header.json"
 					}
 				},
@@ -20,7 +22,22 @@
 						"viewFile":"footer.json"
 					}
 				}
-			]
+			],
+			"view":{
+				"type":"MvcView",
+				"children":[
+					{
+						"type":"CCLabelTTF",
+						"properties":{
+							"text":"One",
+							"x":100,
+							"y":120,
+							"fontFamily":"Marker Felt.ttf",
+							"fontSize":22
+						}
+					}
+				]
+			}
 		}
 	}
 }

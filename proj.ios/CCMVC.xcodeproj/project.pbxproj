@@ -101,6 +101,13 @@
 		57704F1718C9AAEE006B8A62 /* libyhmvc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57704F1618C9AADD006B8A62 /* libyhmvc.a */; };
 		57704F1818C9AAF1006B8A62 /* libyhgui.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57704F1018C9AAD5006B8A62 /* libyhgui.a */; };
 		57704F1918C9AAF4006B8A62 /* libyhge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57704F0A18C9AAC9006B8A62 /* libyhge.a */; };
+		57704F6D18CD520A006B8A62 /* BuilderExternal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57704F6918CD520A006B8A62 /* BuilderExternal.cpp */; };
+		57704F6E18CD520A006B8A62 /* GameSceneBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57704F6B18CD520A006B8A62 /* GameSceneBuilder.cpp */; };
+		57704F7118CD5389006B8A62 /* BaseController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57704F6F18CD5389006B8A62 /* BaseController.cpp */; };
+		57704F7A18CD5728006B8A62 /* TestController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57704F7818CD5728006B8A62 /* TestController.cpp */; };
+		57704F7C18CD58E8006B8A62 /* ui in Resources */ = {isa = PBXBuildFile; fileRef = 57704F7B18CD58E8006B8A62 /* ui */; };
+		57704F7E18CD58ED006B8A62 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 57704F7D18CD58ED006B8A62 /* fonts */; };
+		57704F8118CD5E1E006B8A62 /* BuildOneController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57704F7F18CD5E1E006B8A62 /* BuildOneController.cpp */; };
 		5797A5BF180E917100BA5455 /* HelloLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5797A5BD180E917100BA5455 /* HelloLayer.cpp */; };
 		57EA398F1823A10B001A0E96 /* ShopController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57EA398D1823A10B001A0E96 /* ShopController.cpp */; };
 		7855E0E1153FEF240059DD9A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7855E0DF153FEF240059DD9A /* Default.png */; };
@@ -344,6 +351,19 @@
 		57704F0518C9AAC7006B8A62 /* yhge.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = yhge.xcodeproj; path = ../../yhge/proj.ios/yhge.xcodeproj; sourceTree = "<group>"; };
 		57704F0B18C9AAD4006B8A62 /* yhgui.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = yhgui.xcodeproj; path = ../../yhgui/proj.ios/yhgui.xcodeproj; sourceTree = "<group>"; };
 		57704F1118C9AADC006B8A62 /* yhmvc.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = yhmvc.xcodeproj; path = ../../yhmvc/proj.ios/yhmvc.xcodeproj; sourceTree = "<group>"; };
+		57704F6818CD520A006B8A62 /* BuilderDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BuilderDefine.h; path = ../Classes/SceneBuilder/BuilderDefine.h; sourceTree = "<group>"; };
+		57704F6918CD520A006B8A62 /* BuilderExternal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BuilderExternal.cpp; path = ../Classes/SceneBuilder/BuilderExternal.cpp; sourceTree = "<group>"; };
+		57704F6A18CD520A006B8A62 /* BuilderExternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BuilderExternal.h; path = ../Classes/SceneBuilder/BuilderExternal.h; sourceTree = "<group>"; };
+		57704F6B18CD520A006B8A62 /* GameSceneBuilder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameSceneBuilder.cpp; path = ../Classes/SceneBuilder/GameSceneBuilder.cpp; sourceTree = "<group>"; };
+		57704F6C18CD520A006B8A62 /* GameSceneBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameSceneBuilder.h; path = ../Classes/SceneBuilder/GameSceneBuilder.h; sourceTree = "<group>"; };
+		57704F6F18CD5389006B8A62 /* BaseController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseController.cpp; sourceTree = "<group>"; };
+		57704F7018CD5389006B8A62 /* BaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
+		57704F7818CD5728006B8A62 /* TestController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestController.cpp; sourceTree = "<group>"; };
+		57704F7918CD5728006B8A62 /* TestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestController.h; sourceTree = "<group>"; };
+		57704F7B18CD58E8006B8A62 /* ui */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ui; sourceTree = "<group>"; };
+		57704F7D18CD58ED006B8A62 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
+		57704F7F18CD5E1E006B8A62 /* BuildOneController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BuildOneController.cpp; sourceTree = "<group>"; };
+		57704F8018CD5E1E006B8A62 /* BuildOneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildOneController.h; sourceTree = "<group>"; };
 		5797A5BD180E917100BA5455 /* HelloLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloLayer.cpp; sourceTree = "<group>"; };
 		5797A5BE180E917100BA5455 /* HelloLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloLayer.h; sourceTree = "<group>"; };
 		57EA398C1823958E001A0E96 /* SceneRegisterData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneRegisterData.h; sourceTree = "<group>"; };
@@ -612,6 +632,7 @@
 				5797A5B1180E8DBD00BA5455 /* Controllers */,
 				5797A5B4180E8DBD00BA5455 /* Layers */,
 				5797A5B5180E8DBD00BA5455 /* Scenes */,
+				57704F6318CD51ED006B8A62 /* SceneBuilder */,
 				1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */,
 				1AFAF8B416D35DE700DB1158 /* AppDelegate.h */,
 				574619E118238B2400B44F4F /* Game.cpp */,
@@ -736,9 +757,25 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		57704F6318CD51ED006B8A62 /* SceneBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				57704F6818CD520A006B8A62 /* BuilderDefine.h */,
+				57704F6918CD520A006B8A62 /* BuilderExternal.cpp */,
+				57704F6A18CD520A006B8A62 /* BuilderExternal.h */,
+				57704F6B18CD520A006B8A62 /* GameSceneBuilder.cpp */,
+				57704F6C18CD520A006B8A62 /* GameSceneBuilder.h */,
+			);
+			name = SceneBuilder;
+			sourceTree = "<group>";
+		};
 		5797A5B1180E8DBD00BA5455 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				57704F7F18CD5E1E006B8A62 /* BuildOneController.cpp */,
+				57704F8018CD5E1E006B8A62 /* BuildOneController.h */,
+				57704F6F18CD5389006B8A62 /* BaseController.cpp */,
+				57704F7018CD5389006B8A62 /* BaseController.h */,
 				573FEB191848726100E7C69E /* FooterController.cpp */,
 				573FEB1A1848726100E7C69E /* FooterController.h */,
 				573FEB1B1848726100E7C69E /* HeaderController.cpp */,
@@ -751,6 +788,8 @@
 				573FEB38184DA8E700E7C69E /* OneController.h */,
 				57EA398D1823A10B001A0E96 /* ShopController.cpp */,
 				57EA398E1823A10B001A0E96 /* ShopController.h */,
+				57704F7818CD5728006B8A62 /* TestController.cpp */,
+				57704F7918CD5728006B8A62 /* TestController.h */,
 				5748200418505B1200234D94 /* ThreeController.cpp */,
 				5748200518505B1200234D94 /* ThreeController.h */,
 				573FEB29184C23ED00E7C69E /* ThreeSegmentController.cpp */,
@@ -789,6 +828,8 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				57704F7D18CD58ED006B8A62 /* fonts */,
+				57704F7B18CD58E8006B8A62 /* ui */,
 				1AFAF8B916D35E4900DB1158 /* CloseNormal.png */,
 				1AFAF8BA16D35E4900DB1158 /* CloseSelected.png */,
 				1AFAF8BB16D35E4900DB1158 /* HelloWorld.png */,
@@ -811,6 +852,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "CCMVC" */;
 			buildPhases = (
+				57704F7718CD566C006B8A62 /* remove app data */,
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
@@ -906,8 +948,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57704F7C18CD58E8006B8A62 /* ui in Resources */,
 				7855E0E1153FEF240059DD9A /* Default.png in Resources */,
 				D4EF949A15BD2D8B00D803EB /* Icon-57.png in Resources */,
+				57704F7E18CD58ED006B8A62 /* fonts in Resources */,
 				D4EF949C15BD2D8E00D803EB /* Icon-114.png in Resources */,
 				D4EF949E15BD2D9600D803EB /* Icon-72.png in Resources */,
 				D4EF94A015BD2D9800D803EB /* Icon-144.png in Resources */,
@@ -921,6 +965,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		57704F7718CD566C006B8A62 /* remove app data */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "remove app data";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"remove ui data\"\nrm -r -f \"${TARGET_BUILD_DIR}/${TARGET_NAME}.app/ui\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -928,8 +989,10 @@
 			files = (
 				573FEB1E1848726100E7C69E /* HeaderController.cpp in Sources */,
 				15A3DA311682F826002FB0C5 /* CCBAnimationManager.cpp in Sources */,
+				57704F7118CD5389006B8A62 /* BaseController.cpp in Sources */,
 				15A3DA321682F826002FB0C5 /* CCBFileLoader.cpp in Sources */,
 				15A3DA331682F826002FB0C5 /* CCBKeyframe.cpp in Sources */,
+				57704F8118CD5E1E006B8A62 /* BuildOneController.cpp in Sources */,
 				15A3DA341682F826002FB0C5 /* CCBReader.cpp in Sources */,
 				15A3DA351682F826002FB0C5 /* CCBSequence.cpp in Sources */,
 				15A3DA361682F826002FB0C5 /* CCBSequenceProperty.cpp in Sources */,
@@ -946,6 +1009,7 @@
 				15A3DA411682F826002FB0C5 /* CCMenuItemLoader.cpp in Sources */,
 				57481FFC1850572600234D94 /* OneController.cpp in Sources */,
 				15A3DA421682F826002FB0C5 /* CCNode+CCBRelativePositioning.cpp in Sources */,
+				57704F6D18CD520A006B8A62 /* BuilderExternal.cpp in Sources */,
 				15A3DA431682F826002FB0C5 /* CCNodeLoader.cpp in Sources */,
 				15A3DA441682F826002FB0C5 /* CCNodeLoaderLibrary.cpp in Sources */,
 				573FEB2B184C23ED00E7C69E /* ThreeSegmentController.cpp in Sources */,
@@ -954,6 +1018,7 @@
 				15A3DA471682F826002FB0C5 /* CCScrollViewLoader.cpp in Sources */,
 				15A3DA481682F826002FB0C5 /* CCSpriteLoader.cpp in Sources */,
 				5748200618505B1200234D94 /* ThreeController.cpp in Sources */,
+				57704F7A18CD5728006B8A62 /* TestController.cpp in Sources */,
 				15A3DA491682F826002FB0C5 /* CCControl.cpp in Sources */,
 				15A3DA4A1682F826002FB0C5 /* CCControlButton.cpp in Sources */,
 				15A3DA4B1682F826002FB0C5 /* CCControlColourPicker.cpp in Sources */,
@@ -972,6 +1037,7 @@
 				15A3DA591682F826002FB0C5 /* CCScrollView.cpp in Sources */,
 				15A3DA5A1682F826002FB0C5 /* CCSorting.cpp in Sources */,
 				15A3DA5B1682F826002FB0C5 /* CCTableView.cpp in Sources */,
+				57704F6E18CD520A006B8A62 /* GameSceneBuilder.cpp in Sources */,
 				574619E318238B2400B44F4F /* Game.cpp in Sources */,
 				15A3DA5C1682F826002FB0C5 /* CCTableViewCell.cpp in Sources */,
 				15A3DA5D1682F826002FB0C5 /* HttpClient.cpp in Sources */,
@@ -1028,8 +1094,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;

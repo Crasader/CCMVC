@@ -1,0 +1,43 @@
+{
+	"version":1,
+	"formate":1,
+	"graphData":{
+		"type":"MvcView",
+		"properties":{
+			
+		},
+		"children":[
+			{
+				"type":"NormalButton",
+				"properties":{
+					"x":0,
+					"y":0,
+					
+					"label":{
+						"type":1,
+						"text":"footer",
+						"fontFamily":"Arial-Black",
+						"fontSize":42
+					},
+									
+					"states":{
+						"normal":{
+							"color":[255,255,255]
+						},
+						
+						"pressed":{
+							"color":[255,255,0]
+						},
+						
+						"disabled":{
+							"color":[128,128,128]
+						}
+					}
+				},
+				"events":{
+					"touchUpInside":"testa"
+				}
+			}
+		]
+	}
+}
